@@ -1,4 +1,4 @@
-@layer settings, generic, elements, components;
+@layer settings, generic, elements, components, utilities;
 
 @layer settings {
   :root {
