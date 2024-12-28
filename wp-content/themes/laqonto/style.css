@@ -53,13 +53,6 @@ Text Domain: laqonto
     grid-column: span 9 / span 9;
   }
 
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--size-27);
-  }
-
   /**
    * Container
    */
@@ -108,8 +101,39 @@ Text Domain: laqonto
   /**
    * Header
    */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--size-27);
+  }
+
+  .site-header--sticky.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .site-header--sticky {
+    position: fixed;
+    top: 0;
+    height: var(--size-18);
+    background-color: var(--color-grayscale-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+
+  .admin-bar .site-header--sticky {
+    top: 32px;
+  }
+
   .site-header-logo {
     text-transform: uppercase;
+  }
+
+  .site-header--sticky .site-header-logo__svg {
+    width: auto;
+    height: var(--size-6);
   }
 
   .site-header-nav {
