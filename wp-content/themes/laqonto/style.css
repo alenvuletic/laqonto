@@ -1,0 +1,138 @@
+/*
+Theme Name: LAQONTO
+Author: Alen Vuletić
+Version: 1.0
+Text Domain: laqonto
+*/
+
+@layer elements {
+  ::selection {
+    color: var(--color-grayscale-white);
+    background: var(--color-primary);
+  }
+
+  body {
+    color: var(--color-secondary);
+    font-family: var(--font-family-text);
+    font-size: var(--text-md);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-family-display);
+    line-height: 1;
+  }
+}
+
+@layer components {
+  /**
+   * Grid
+   */
+  .grid {
+    width: 100%;
+    max-width: var(--grid-width);
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+    gap: var(--grid-gap);
+    padding-inline: var(--grid-gap);
+    margin-inline: auto;
+  }
+
+  .grid-cols-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .grid-cols-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--size-27);
+  }
+
+  /**
+   * Container
+   */
+  .container {
+    width: 100%;
+    max-width: var(--grid-width);
+    padding-inline: var(--grid-gap);
+    margin-inline: auto;
+  }
+
+  /**
+   * Button
+   */
+  .button {
+    display: inline-block;
+    color: var(--color-grayscale-white);
+    font-weight: 700;
+    border-radius: var(--size-1\.5);
+    padding-inline: var(--size-8);
+  }
+
+  .button--primary {
+    background-color: var(--color-primary);
+  }
+
+  .button--secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .button--small {
+    line-height: var(--size-12);
+  }
+
+  .button--medium {
+    line-height: var(--size-15);
+  }
+
+  .button--large {
+    line-height: var(--size-18);
+  }
+
+  .button--rounded {
+    border-radius: 9999px;
+  }
+
+  /**
+   * Header
+   */
+  .site-header-logo {
+    text-transform: uppercase;
+  }
+
+  .site-header-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--size-16);
+  }
+
+  .site-header-nav__link {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  /**
+   * Footer
+   */
+  .site-footer {
+    color: var(--color-grayscale-white);
+    background-color: var(--color-secondary);
+  }
+
+  .site-footer__title {
+    font-family: var(--font-family-display);
+    font-size: var(--text-9xl);
+  }
+}

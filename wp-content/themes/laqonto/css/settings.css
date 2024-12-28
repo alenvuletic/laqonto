@@ -1,0 +1,68 @@
+@layer settings, generic, elements, components;
+
+@layer settings {
+  :root {
+    /* Colors */
+    --color-primary: var(--color-orange-700);
+    --color-secondary: var(--color-grayscale-700);
+    --color-orange-100: #fff6f3;
+    --color-orange-700: #fc663d;
+    --color-grayscale-white: #fff;
+    --color-grayscale-100: #f3f3f3;
+    --color-grayscale-200: #eee;
+    --color-grayscale-300: #d9d9d9;
+    --color-grayscale-400: #d1d1d1;
+    --color-grayscale-500: #adadad;
+    --color-grayscale-600: #8a8a8a;
+    --color-grayscale-700: #202020;
+
+    /* Font families */
+    --font-family-display: 'Platypi', serif;
+    --font-family-text: 'Work Sans', serif;
+
+    /* Font sizes */
+    --text-9xl: 106px;
+    --text-8xl: 80px;
+    --text-7xl: 60px;
+    --text-6xl: 50px;
+    --text-5xl: 40px;
+    --text-4xl: 36px;
+    --text-3xl: 32px;
+    --text-2xl: 28px;
+    --text-xl: 24px;
+    --text-lg: 20px;
+    --text-md: 18px;
+    --text-sm: 16px;
+    --text-xs: 15px;
+
+    /* Sizing */
+    --size-1: 4px;
+    --size-1\.5: 6px;
+    --size-2: 8px;
+    --size-3: 12px;
+    --size-4: 16px;
+    --size-5: 20px;
+    --size-6: 24px;
+    --size-7: 28px;
+    --size-8: 32px;
+    --size-9: 36px;
+    --size-10: 40px;
+    --size-11: 44px;
+    --size-12: 48px;
+    --size-13: 52px;
+    --size-14: 56px;
+    --size-15: 60px;
+    --size-16: 64px;
+    --size-17: 68px;
+    --size-18: 72px;
+    --size-19: 76px;
+    --size-20: 80px;
+    --size-27: 108px;
+    --size-312: 1248px;
+
+    /* Grid */
+    --grid-columns: 12;
+    --grid-gap: var(--size-6);
+    --grid-width: calc(var(--size-312) + (var(--grid-gap) * 2));
+  }
+}
