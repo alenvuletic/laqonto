@@ -168,27 +168,117 @@ Text Domain: laqonto
    * Footer
    */
   .site-footer {
-    color: var(--color-grayscale-white);
+    color: var(--color-grayscale-500);
     background-color: var(--color-secondary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    padding-block-start: 160px;
   }
 
   .site-footer__title {
+    color: var(--color-grayscale-white);
     font-family: var(--font-family-display);
     font-size: var(--text-9xl);
+    line-height: 1;
+  }
+  /**
+   * List arrow
+   */
+  .list-arrow {
+    display: inline-block;
+    font-size: var(--text-2xl);
+  }
+
+  .list-arrow__item {
+    display: flex;
+  }
+
+  .list-arrow__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-2);
+  }
+
+  .list-arrow__icon {
+    width: var(--size-7);
+    height: var(--size-7);
+  }
+
+  /**
+   * Divider
+   */
+  .divider {
+    height: 1px;
+    background-color: var(--color-grayscale-400);
+  }
+
+  .divider--thick {
+    height: 2px;
+  }
+
+  .divider--orange-700 {
+    background-color: var(--color-orange-700);
   }
 }
 
 @layer utilities {
   /**
+   * Text Color
+   */
+  .text-white {
+    color: var(--color-grayscale-white);
+  }
+
+  /**
    * Spacing
    */
+  .mt-7 {
+    margin-block-start: var(--size-7);
+  }
+
+  .mt-9 {
+    margin-block-start: var(--size-9);
+  }
+
+  .mt-15 {
+    margin-block-start: var(--size-15);
+  }
+
+  .mt-68 {
+    margin-block-start: var(--size-68);
+  }
+
+  .mb-6 {
+    margin-block-end: var(--size-6);
+  }
+
+  .mb-7 {
+    margin-block-end: var(--size-7);
+  }
+
+  .mb-9 {
+    margin-block-end: var(--size-9);
+  }
+
   .mb-12 {
     margin-block-end: var(--size-12);
+  }
+
+  .mb-35 {
+    margin-block-end: var(--size-35);
   }
 
   /**
    * Grid
    */
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
   .col-span-6 {
     grid-column: span 6 / span 6;
   }
@@ -201,7 +291,15 @@ Text Domain: laqonto
     grid-column: span 9 / span 9;
   }
 
+  .col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
   .col-start-5 {
     grid-column-start: 5;
+  }
+
+  .col-start-10 {
+    grid-column-start: 10;
   }
 }
