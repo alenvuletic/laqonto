@@ -60,6 +60,7 @@
     --size-27: 108px;
     --size-35: 140px;
     --size-40: 160px;
+    --size-67: 268px;
     --size-68: 272px;
     --size-137: 548px;
     --size-198: 792px;
@@ -68,6 +69,7 @@
     /* Grid */
     --grid-columns: 12;
     --grid-gap: var(--size-6);
+    --grid-gap-mobile: var(--size-4);
     --grid-width: calc(var(--size-312) + (var(--grid-gap) * 2));
   }
 }
