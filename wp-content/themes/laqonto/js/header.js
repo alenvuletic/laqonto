@@ -11,4 +11,16 @@
       }
     });
   }
+
+  document
+    .querySelector('.js-hamburger-icon')
+    .addEventListener('click', function () {
+      this.classList.toggle('is-active');
+    });
+
+  document
+    .querySelector('.js-offcanvas-toggle')
+    .addEventListener('click', function () {
+      document.querySelector('.offcanvas').classList.toggle('is-active');
+    });
 })();

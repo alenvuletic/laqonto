@@ -83,8 +83,14 @@ Text Domain: laqonto
   .container {
     width: 100%;
     max-width: var(--grid-width);
-    padding-inline: var(--grid-gap);
+    padding-inline: var(--grid-gap-mobile);
     margin-inline: auto;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-inline: var(--grid-gap);
+    }
   }
 
   /**
@@ -133,10 +139,7 @@ Text Domain: laqonto
    * Header
    */
   .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: var(--size-27);
+    width: 100%;
   }
 
   .site-header--sticky.is-visible {
@@ -147,7 +150,6 @@ Text Domain: laqonto
   .site-header--sticky {
     position: fixed;
     top: 0;
-    height: var(--size-18);
     background-color: var(--color-grayscale-white);
     opacity: 0;
     visibility: hidden;
@@ -158,8 +160,29 @@ Text Domain: laqonto
     top: 32px;
   }
 
+  .site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--size-27);
+  }
+
+  .site-header--sticky .site-header__inner {
+    height: var(--size-18);
+  }
+
   .site-header-logo {
     text-transform: uppercase;
+  }
+
+  .site-header-logo__svg {
+    height: var(--size-9);
+  }
+
+  @media (min-width: 1024px) {
+    .site-header-logo__svg {
+      height: var(--size-12);
+    }
   }
 
   .site-header--sticky .site-header-logo__svg {
@@ -252,6 +275,91 @@ Text Domain: laqonto
 
   .divider--orange-700 {
     background-color: var(--color-orange-700);
+  }
+
+  /**
+   * Hamburger icon
+   */
+  .hamburger-icon {
+    display: inline-block;
+    padding: var(--size-4);
+  }
+
+  .hamburger-icon__box {
+    display: block;
+    position: relative;
+    width: var(--size-10);
+    height: var(--size-7);
+  }
+
+  .hamburger-icon__inner,
+  .hamburger-icon__inner::before,
+  .hamburger-icon__inner::after {
+    position: absolute;
+    width: var(--size-10);
+    height: var(--size-1);
+    background-color: var(--color-primary);
+    border-radius: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+  }
+
+  .hamburger-icon__inner::before,
+  .hamburger-icon__inner::after {
+    content: '';
+    display: block;
+  }
+
+  .hamburger-icon__inner::before {
+    top: var(--size-2\.5);
+  }
+
+  .hamburger-icon__inner::after {
+    top: var(--size-5);
+  }
+
+  .hamburger-icon__inner {
+    display: block;
+    top: var(--size-\.5);
+    margin-top: -2px;
+  }
+
+  .hamburger-icon.is-active .hamburger-icon__inner {
+    transform: translate3d(0, var(--size-2\.5), 0) rotate(45deg);
+  }
+
+  .hamburger-icon.is-active .hamburger-icon__inner::before {
+    opacity: 0;
+    transform: rotate(-45deg) translate3d(var(--size-1\.5), -6px, 0);
+  }
+
+  .hamburger-icon.is-active .hamburger-icon__inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-90deg);
+  }
+
+  /**
+   * Offcanvas
+   */
+  .offcanvas {
+    height: calc(100dvh - 108px);
+    width: 100%;
+    position: fixed;
+    top: 108px;
+    left: 0;
+    background-color: var(--color-grayscale-white);
+    z-index: 998;
+    padding-top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-16px);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.3s;
+  }
+
+  .offcanvas.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
 
