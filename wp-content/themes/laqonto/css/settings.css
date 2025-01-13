@@ -35,6 +35,9 @@
     --text-sm: 16px;
     --text-xs: 15px;
 
+    /* Letter spacing */
+    --tracking-tight: -0.02em;
+
     /* Sizing */
     --size-\.5: 2px;
     --size-1: 4px;

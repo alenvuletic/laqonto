@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <button class="hamburger-icon hamburger-icon--slider js-hamburger-icon js-offcanvas-toggle lg:hidden" type="button">
+        <button class="hamburger-icon js-hamburger-icon js-offcanvas-toggle lg:hidden -me-4" type="button">
           <span class="hamburger-icon__box">
             <span class="hamburger-icon__inner"></span>
           </span>
@@ -71,7 +71,7 @@
             </li>
           </ul>
         </nav>
-        <button class="hamburger-icon hamburger-icon--slider js-hamburger-icon js-offcanvas-toggle lg:hidden" type="button">
+        <button class="hamburger-icon js-hamburger-icon js-offcanvas-toggle lg:hidden -me-4" type="button">
           <span class="hamburger-icon__box">
             <span class="hamburger-icon__inner"></span>
           </span>
@@ -81,19 +81,49 @@
 
     <div class="offcanvas">
       <div class="offcanvas__inner container">
-        <p>Izbornik</p>
-        <nav>
-          <ul class="mobile-navigation">
-            <li>
-              <a href="https://example.com">Naslovnica</a>
+        <div>
+        <p class="offcanvas__title">Izbornik</p>
+          <nav>
+            <ul class="offcanvas-nav">
+              <li class="offcanvas-nav__item is-current">
+                <a href="https://example.com" class="offcanvas-nav__link">Naslovnica</a>
+              </li>
+              <li class="offcanvas-nav__item">
+                <a href="https://example.com" class="offcanvas-nav__link">Kontakt</a>
+              </li>
+              <li class="offcanvas-nav__item">
+                <a href="https://example.com" class="offcanvas-nav__link">Zatraži ponudu</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <hr class="divider mb-2" />
+          <p class="offcanvas__title">Jezik</p>
+          <div class="toggle">
+            <a href="#" class="toggle__button is-active">HRV</a>
+            <a href="#" class="toggle__button">ENG</a>
+          </div>
+          <hr class="divider mt-9 mb-2" />
+          <p class="offcanvas__title">Povežimo se</p>
+          <ul class="list-arrow">
+            <li class="list-arrow__item">
+              <a href="#" class="list-arrow__link">
+                <i class="list-arrow__icon">
+                  <?php echo get_icon( 'arrow-right' ) ?>
+                </i>
+                <span>LinkedIn</span>
+              </a>
             </li>
-            <li>
-              <a href="https://example.com">Kontakt</a>
-            </li>
-            <li>
-              <a href="https://example.com">Zatraži ponudu</a>
+            <li class="list-arrow__item">
+              <a href="#" class="list-arrow__link">
+                <i class="list-arrow__icon">
+                  <?php echo get_icon( 'arrow-right' ) ?>
+                </i>
+                <span>Facebook</span>
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </div>

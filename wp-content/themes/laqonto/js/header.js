@@ -6,21 +6,32 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY > 400) {
         headerStickyElements[0].classList.add('is-visible');
+        document.querySelector('html').classList.add('has-sticky-header');
       } else {
         headerStickyElements[0].classList.remove('is-visible');
+        document.querySelector('html').classList.remove('has-sticky-header');
       }
     });
   }
 
-  document
-    .querySelector('.js-hamburger-icon')
-    .addEventListener('click', function () {
+  const hamburgerIconElements = document.querySelectorAll(
+    '.js-offcanvas-toggle'
+  );
+
+  hamburgerIconElements.forEach(function (element) {
+    element.addEventListener('click', function () {
       this.classList.toggle('is-active');
     });
+  });
 
-  document
-    .querySelector('.js-offcanvas-toggle')
-    .addEventListener('click', function () {
+  const offcanvasToggleElements = document.querySelectorAll(
+    '.js-offcanvas-toggle'
+  );
+
+  offcanvasToggleElements.forEach(function (element) {
+    element.addEventListener('click', function () {
       document.querySelector('.offcanvas').classList.toggle('is-active');
+      document.querySelector('html').classList.toggle('has-locked-scroll');
     });
+  });
 })();

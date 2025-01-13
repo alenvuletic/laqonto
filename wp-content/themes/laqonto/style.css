@@ -11,6 +11,11 @@ Text Domain: laqonto
     background: var(--color-primary);
   }
 
+  /* TODO: Fix missing scrollbar issue */
+  html.has-locked-scroll {
+    overflow: hidden;
+  }
+
   body {
     color: var(--color-secondary);
     font-family: var(--font-family-text);
@@ -222,7 +227,7 @@ Text Domain: laqonto
     color: var(--color-grayscale-white);
     font-family: var(--font-family-display);
     font-size: var(--text-7xl);
-    letter-spacing: -0.02em;
+    letter-spacing: var(--tracking-tight);
     line-height: 1;
   }
 
@@ -230,6 +235,22 @@ Text Domain: laqonto
     .site-footer__title {
       font-size: var(--text-9xl);
     }
+  }
+
+  /**
+   * Hero
+   */
+  .hero {
+    display: flex;
+    align-items: end;
+    height: 100dvh;
+    max-height: var(--size-198);
+    padding-block-end: var(--size-15);
+  }
+
+  .hero__inner {
+    width: 100%;
+    max-width: var(--size-137);
   }
 
   /**
@@ -270,7 +291,7 @@ Text Domain: laqonto
   }
 
   .divider--thick {
-    height: 2px;
+    height: var(--size-\.5);
   }
 
   .divider--orange-700 {
@@ -345,7 +366,7 @@ Text Domain: laqonto
     height: calc(100dvh - 108px);
     width: 100%;
     position: fixed;
-    top: 108px;
+    top: var(--size-27);
     left: 0;
     background-color: var(--color-grayscale-white);
     z-index: 998;
@@ -356,10 +377,82 @@ Text Domain: laqonto
     transition: opacity 0.2s, visibility 0.2s, transform 0.3s;
   }
 
+  .has-sticky-header .offcanvas {
+    height: calc(100dvh - 72px);
+    top: var(--size-18);
+  }
+
   .offcanvas.is-active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+
+  .offcanvas__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: scroll;
+    padding-block: var(--size-7);
+  }
+
+  .offcanvas__title {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: var(--tracking-tight);
+    margin-block-end: var(--size-2);
+  }
+
+  .offcanvas-nav {
+    font-size: var(--text-4xl);
+    font-family: var(--font-family-display);
+    margin-block-end: var(--size-27);
+  }
+
+  .offcanvas-nav__link {
+    display: block;
+    background-image: url('images/layout/offcanvas-nav-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: var(--size-11);
+    background-position: top var(--size-3) right;
+    border-block-start: 1px solid;
+    border-block-start-color: var(--color-grayscale-400);
+    padding-block-start: var(--size-\.5);
+    padding-block-end: var(--size-8);
+  }
+
+  .offcanvas-nav__item.is-current .offcanvas-nav__link {
+    color: var(--color-primary);
+    border-block-start: var(--size-\.5) solid;
+    border-block-start-color: var(--color-primary);
+  }
+
+  /**
+   * Toggle
+   */
+  .toggle {
+    display: inline-flex;
+    color: var(--color-grayscale-white);
+    font-weight: 500;
+    background-color: var(--color-grayscale-300);
+    border-radius: 9999px;
+    padding-block: var(--size-1);
+    padding-inline-start: var(--size-1);
+  }
+
+  .toggle__button {
+    text-align: center;
+    line-height: var(--size-11);
+    border-radius: 9999px;
+    padding-inline-start: var(--size-2);
+    padding-inline-end: var(--size-4);
+  }
+
+  .toggle__button.is-active {
+    width: var(--size-19);
+    background-color: var(--color-secondary);
+    padding-inline: 0;
   }
 }
 
@@ -637,6 +730,10 @@ Text Domain: laqonto
     .lg\:mb-35 {
       margin-block-end: var(--size-35);
     }
+  }
+
+  .-me-4 {
+    margin-inline-end: -16px;
   }
 
   /**
