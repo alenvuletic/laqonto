@@ -7,8 +7,13 @@
  */
 
 ?>
+    <?php if ( is_singular() ) : ?>
+      <div class="-mb-22">
+        <?php include "inc/block-hero-cta.php"; ?>
+      </div>
+    <?php endif; ?>
 
-    <div class="site-footer">
+    <div class="site-footer<?php echo is_singular() ? ' site-footer--has-hero-cta' : ''; ?>">
       <div class="grid">
         <div class="col-span-12 lg:col-span-9 order-1">
           <p class="site-footer__title">Povežimo se</p>
