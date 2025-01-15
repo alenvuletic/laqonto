@@ -158,6 +158,7 @@ Text Domain: laqonto
     background-color: var(--color-grayscale-white);
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
     transition: opacity 0.2s, visibility 0.2s;
   }
 
@@ -254,6 +255,81 @@ Text Domain: laqonto
   }
 
   /**
+   * Hero CTA
+   */
+  .hero-cta {
+    position: relative;
+    height: var(--size-143);
+    background-color: var(--color-grayscale-300);
+    background-image: url('images/layout/hero-cta-background-mobile.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--size-4);
+    margin-inline: calc(var(--grid-gap-mobile) * -1);
+  }
+
+  @media (min-width: 640px) {
+    .hero-cta {
+      height: var(--size-180);
+      background-image: url('images/layout/hero-cta-background.png');
+      background-position: bottom left;
+      background-size: auto;
+      margin-inline: 0;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero-cta {
+      margin-inline: calc(var(--size-10) * -1);
+    }
+  }
+
+  .hero-cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: calc(100% - var(--size-6));
+    height: var(--size-93);
+    background-color: var(--color-grayscale-white);
+    position: absolute;
+    bottom: calc(var(--size-68) * -1);
+    left: var(--size-3);
+    right: var(--size-3);
+    padding-inline: var(--size-4);
+    padding-block-start: var(--size-1);
+    padding-block-end: var(--size-5);
+  }
+
+  @media (min-width: 640px) {
+    .hero-cta__content {
+      width: var(--size-126);
+      height: var(--size-126);
+      bottom: var(--size-10);
+      left: var(--size-10);
+      right: auto;
+      padding-inline: var(--size-7);
+      padding-block-end: var(--size-7);
+    }
+  }
+
+  .hero-cta__title {
+    color: var(--color-primary);
+    font-size: var(--text-8xl);
+    font-family: var(--font-family-display);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  @media (min-width: 640px) {
+    .hero-cta__title {
+      font-size: var(--text-9xl);
+    }
+  }
+
+  /**
    * List arrow
    */
   .list-arrow {
@@ -343,7 +419,7 @@ Text Domain: laqonto
   .hamburger-icon__inner {
     display: block;
     top: var(--size-\.5);
-    margin-top: -2px;
+    margin-top: calc(var(--size-\.5) * -1);
   }
 
   .hamburger-icon.is-active .hamburger-icon__inner {
@@ -362,14 +438,15 @@ Text Domain: laqonto
   /**
    * Offcanvas
    */
+  /* TODO: Handle height when admin bar is visible */
   .offcanvas {
-    height: calc(100dvh - 108px);
+    height: calc(100dvh - var(--size-27));
     width: 100%;
     position: fixed;
     top: var(--size-27);
     left: 0;
     background-color: var(--color-grayscale-white);
-    z-index: 998;
+    z-index: 1100;
     padding-top: 0;
     opacity: 0;
     visibility: hidden;
@@ -378,7 +455,7 @@ Text Domain: laqonto
   }
 
   .has-sticky-header .offcanvas {
-    height: calc(100dvh - 72px);
+    height: calc(100dvh - var(--size-18));
     top: var(--size-18);
   }
 
@@ -733,7 +810,7 @@ Text Domain: laqonto
   }
 
   .-me-4 {
-    margin-inline-end: -16px;
+    margin-inline-end: calc(var(--size-4) * -1);
   }
 
   /**
