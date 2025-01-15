@@ -5,6 +5,37 @@ Version: 1.0
 Text Domain: laqonto
 */
 
+/**
+ * Overriding inline CSS
+ */
+.entry-content .has-x-large-font-size {
+  font-size: var(--text-4xl) !important;
+}
+
+@media (min-width: 1024px) {
+  .entry-content .has-x-large-font-size {
+    font-size: var(--text-5xl) !important;
+  }
+}
+
+.entry-content .has-large-font-size {
+  font-size: var(--text-3xl) !important;
+}
+
+@media (min-width: 1024px) {
+  .entry-content .has-large-font-size {
+    font-size: var(--text-4xl) !important;
+  }
+}
+
+.entry-content .has-medium-font-size {
+  font-size: var(--text-xl) !important;
+}
+
+.entry-content .has-small-font-size {
+  font-size: var(--text-sm) !important;
+}
+
 @layer elements {
   ::selection {
     color: var(--color-grayscale-white);
@@ -548,6 +579,120 @@ Text Domain: laqonto
     background-color: var(--color-secondary);
     padding-inline: 0;
   }
+
+  /**
+   * Entry
+   */
+  .entry-header {
+    margin-block-end: var(--size-18);
+  }
+
+  @media (min-width: 1024px) {
+    .entry-header {
+      margin-block-start: var(--size-7);
+      margin-block-end: var(--size-27);
+    }
+  }
+
+  .entry-title {
+    color: var(--color-primary);
+    font-size: var(--text-8xl);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  @media (min-width: 1024px) {
+    .entry-title {
+      font-size: var(--text-9xl);
+    }
+  }
+
+  .entry-content {
+    margin-block-end: var(--size-29);
+  }
+
+  .entry-content :first-child {
+    margin-block-start: 0 !important;
+  }
+
+  .entry-content :last-child {
+    margin-block-end: 0 !important;
+  }
+
+  .entry-content .has-x-large-font-size,
+  .entry-content .has-large-font-size,
+  .entry-content .has-medium-font-size,
+  .entry-content .has-small-font-size {
+    font-family: var(--font-family-display);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: var(--tracking-tight);
+    margin-block: var(--size-10);
+  }
+
+  .entry-content p,
+  .entry-content blockquote {
+    margin-block-end: var(--size-5);
+  }
+
+  .entry-content p {
+    font-size: var(--text-sm);
+  }
+
+  @media (min-width: 1024px) {
+    .entry-content p {
+      font-size: var(--text-md);
+    }
+  }
+
+  .entry-content .wp-block-image {
+    margin-block: var(--size-10) !important;
+  }
+
+  @media (min-width: 1024px) {
+    .entry-content .wp-block-image {
+      margin-block: var(--size-13) !important;
+    }
+  }
+
+  .entry-content .wp-block-image > figure {
+    float: none !important;
+  }
+
+  .entry-content .wp-block-image .alignleft,
+  .entry-content .wp-block-image .alignright {
+    display: block !important;
+  }
+
+  .entry-content .wp-block-image .alignleft {
+    margin-inline-end: 0 !important;
+  }
+
+  @media (min-width: 1296px) {
+    .entry-content .wp-block-image .alignleft {
+      margin-inline-start: calc(
+        ((var(--grid-column-width) * 2) + (var(--grid-gap) * 2)) * -1
+      ) !important;
+    }
+  }
+
+  .entry-content .wp-block-image .alignright {
+    margin-inline-start: 0 !important;
+  }
+
+  @media (min-width: 1296px) {
+    .entry-content .wp-block-image .alignright {
+      margin-inline-end: calc(
+        ((var(--grid-column-width) * 2) + (var(--grid-gap) * 2)) * -1
+      ) !important;
+    }
+  }
+
+  .entry-content .wp-element-caption {
+    display: block !important;
+    color: var(--color-grayscale-700);
+    font-size: var(--text-xs);
+    font-style: italic;
+  }
 }
 
 @layer utilities {
@@ -622,6 +767,10 @@ Text Domain: laqonto
     margin-block-start: var(--size-9);
   }
 
+  .mt-12 {
+    margin-block-start: var(--size-12);
+  }
+
   .mt-15 {
     margin-block-start: var(--size-15);
   }
@@ -677,6 +826,10 @@ Text Domain: laqonto
 
     .lg\:mt-10 {
       margin-block-start: var(--size-9);
+    }
+
+    .lg\:mt-12 {
+      margin-block-start: var(--size-12);
     }
 
     .lg\:mt-15 {

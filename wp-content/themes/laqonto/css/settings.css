@@ -4,7 +4,7 @@
   :root {
     /* Colors */
     --color-primary: var(--color-orange-700);
-    --color-secondary: var(--color-grayscale-700);
+    --color-secondary: var(--color-grayscale-800);
     --color-orange-100: #fff6f3;
     --color-orange-700: #fc663d;
     --color-grayscale-white: #fff;
@@ -14,7 +14,8 @@
     --color-grayscale-400: #d1d1d1;
     --color-grayscale-500: #adadad;
     --color-grayscale-600: #8a8a8a;
-    --color-grayscale-700: #202020;
+    --color-grayscale-700: #505050;
+    --color-grayscale-800: #202020;
 
     /* Font families */
     --font-family-display: 'Platypi', serif;
@@ -64,6 +65,7 @@
     --size-20: 80px;
     --size-22: 88px;
     --size-27: 108px;
+    --size-29: 116px;
     --size-35: 140px;
     --size-40: 160px;
     --size-50: 200px;
@@ -83,5 +85,9 @@
     --grid-gap: var(--size-6);
     --grid-gap-mobile: var(--size-4);
     --grid-width: calc(var(--size-312) + (var(--grid-gap) * 2));
+    --grid-column-width: calc(
+      (var(--size-312) - (var(--grid-gap) * (var(--grid-columns) - 1))) /
+        var(--grid-columns)
+    );
   }
 }
