@@ -110,7 +110,7 @@
             <li class="list-arrow__item">
               <a href="#" class="list-arrow__link">
                 <i class="list-arrow__icon">
-                  <?php echo get_icon( 'arrow-right' ) ?>
+                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
                 <span>LinkedIn</span>
               </a>
@@ -118,7 +118,7 @@
             <li class="list-arrow__item">
               <a href="#" class="list-arrow__link">
                 <i class="list-arrow__icon">
-                  <?php echo get_icon( 'arrow-right' ) ?>
+                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
                 <span>Facebook</span>
               </a>
