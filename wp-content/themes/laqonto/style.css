@@ -171,6 +171,17 @@ Text Domain: laqonto
     border-radius: 9999px;
   }
 
+  .button--has-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-2);
+  }
+
+  .button__icon svg {
+    width: var(--size-7);
+    height: var(--size-7);
+  }
+
   /**
    * Header
    */
@@ -642,6 +653,11 @@ Text Domain: laqonto
     .entry-content p {
       font-size: var(--text-md);
     }
+  }
+
+  .entry-content .wp-block-heading {
+    margin-block-start: var(--size-12);
+    margin-block-end: var(--size-7);
   }
 
   .entry-content .wp-block-image {
