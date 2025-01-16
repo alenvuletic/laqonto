@@ -13,8 +13,10 @@ function laqonto_scripts_styles() {
 add_action( "wp_enqueue_scripts", "laqonto_scripts_styles" );
 
 /**
- * Get icon
+ * Check if the current page should have a hero CTA.
  */
-function get_icon( $name ) {
-  return file_get_contents( "wp-content/themes/laqonto/icons/$name.svg" );
+function has_hero_cta() {
+  return
+    is_singular() &&
+    get_page_template_slug() !== 'page-templates/forms.php';
 }

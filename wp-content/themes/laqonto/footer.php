@@ -7,13 +7,13 @@
  */
 
 ?>
-    <?php if ( is_singular() ) : ?>
+    <?php if ( has_hero_cta() ) : ?>
       <div class="-mb-22">
         <?php include "inc/block-hero-cta.php"; ?>
       </div>
     <?php endif; ?>
 
-    <div class="site-footer<?php echo is_singular() ? ' site-footer--has-hero-cta' : ''; ?>">
+    <div class="site-footer<?php echo has_hero_cta() ? ' site-footer--has-hero-cta' : ''; ?>">
       <div class="grid">
         <div class="col-span-12 lg:col-span-9 order-1">
           <p class="site-footer__title">Povežimo se</p>
@@ -23,7 +23,7 @@
             <li class="list-arrow__item">
               <a href="#" class="list-arrow__link">
                 <i class="list-arrow__icon">
-                  <?php echo get_icon( 'arrow-right' ) ?>
+                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
                 <span>LinkedIn</span>
               </a>
@@ -31,7 +31,7 @@
             <li class="list-arrow__item">
               <a href="#" class="list-arrow__link">
                 <i class="list-arrow__icon">
-                  <?php echo get_icon( 'arrow-right' ) ?>
+                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
                 <span>Facebook</span>
               </a>
