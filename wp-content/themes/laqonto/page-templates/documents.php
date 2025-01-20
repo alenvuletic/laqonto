@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Forms
+ * Template Name: Documents
  */
 ?>
 
@@ -27,13 +27,13 @@
   </header>
   <div class="container mb-22">
     <main>
-      <div class="forms-blocks-section">
-        <section class="forms-block">
-          <h2 class="forms-block__title">Porezni obrasci</h2>
+      <div class="documents-blocks-section">
+        <section class="documents-block">
+          <h2 class="documents-block__title">Porezni obrasci</h2>
           <ul>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Prijedlog zahtjeva za registriranje za potrebe pdv-a</span></p>
@@ -47,12 +47,12 @@
             </li>
           </ul>
         </section>
-        <section class="forms-block">
-          <h2 class="forms-block__title">Obrasci za plaće</h2>
+        <section class="documents-block">
+          <h2 class="documents-block__title">Obrasci za plaće</h2>
           <ul>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Punomoć Hrvatskom zavodu za mirovinsko osiguranje</span></p>
@@ -66,12 +66,12 @@
             </li>
           </ul>
         </section>
-        <section class="forms-block">
-          <h2 class="forms-block__title">Isplate zaposlenicima</h2>
+        <section class="documents-block">
+          <h2 class="documents-block__title">Isplate zaposlenicima</h2>
           <ul>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Tablica putnih troškova</span></p>
@@ -83,9 +83,9 @@
                 <span>Preuzmi</span>
               </a>
             </li>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Putni nalog tuzemstvo</span></p>
@@ -97,9 +97,9 @@
                 <span>Preuzmi</span>
               </a>
             </li>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Putni nalog inozemstvo</span></p>
@@ -111,9 +111,9 @@
                 <span>Preuzmi</span>
               </a>
             </li>
-            <li class="forms-block-item">
-              <div class="forms-block-item__main">
-                <span class="forms-block-item__icon">
+            <li class="documents-block-item">
+              <div class="documents-block-item__main">
+                <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
                 <p>Nove dnevnice za inozemstvo u 2024.</span></p>
