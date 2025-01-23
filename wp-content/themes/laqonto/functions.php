@@ -17,6 +17,9 @@ add_action( "wp_enqueue_scripts", "laqonto_scripts_styles" );
  */
 function has_hero_cta() {
   return
-    is_singular() &&
-    get_page_template_slug() !== 'page-templates/documents.php';
+    is_home() ||
+    (
+      get_page_template_slug() !== 'page-templates/documents.php' &&
+      get_page_template_slug() !== 'page-templates/form.php'
+    );
 }
