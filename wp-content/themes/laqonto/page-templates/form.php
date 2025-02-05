@@ -25,7 +25,7 @@
       </div>
     </div>
   </header>
-  <div class="container mb-22">
+  <div class="container">
     <main>
       <?php gravity_form( 1 ); ?>
     </main>

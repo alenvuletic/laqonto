@@ -68,8 +68,9 @@ Text Domain: laqonto
   --gf-ctrl-select-icon-size: var(--size-6);
   --gf-ctrl-select-icon-position: right var(--size-5) center;
   --gf-ctrl-choice-size: var(--size-10);
-  --gf-ctrl-radio-check-radius: var(--size-\.5);
   --gf-ctrl-choice-check-color: var(--color-secondary);
+  --gf-ctrl-radio-check-radius: var(--size-\.5);
+  --gf-ctrl-textarea-padding-y: var(--size-4);
 }
 
 .page-template-form .gform_heading {
@@ -102,6 +103,10 @@ Text Domain: laqonto
   margin-block-end: 0 !important;
 }
 
+.gfield--type-textarea .gfield_label {
+  height: auto;
+}
+
 .page-template-form .ginput_container {
   width: calc(
     (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
@@ -121,6 +126,112 @@ Text Domain: laqonto
 .ginput_container > input,
 .ginput_container > select {
   block-size: unset !important;
+}
+
+.gform-theme--framework
+  .gfield:where(.gfield--type-multiselect, .gfield--input-type-multiselect)
+  .chosen-container-multi:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  .gfield:where(.gfield--type-select, .gfield--input-type-select)
+  .chosen-search
+  input[type='text']:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  .gfield:where(.gfield--type-select, .gfield--input-type-select)
+  .chosen-single:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  .gform-theme-field-control:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  input[type]:where(:not(.gform-text-input-reset):not([type='hidden'])):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  select:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  select[multiple]:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework
+  textarea:where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  .button:where(:not(.gform-theme-no-framework)):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  .gform-theme-button:where(:not(.gform-theme-no-framework)):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  :where(:not(.mce-splitbtn))
+  > button:not([id*='mceu_']):not(.mce-open):where(
+    :not(.gform-theme-no-framework)
+  ):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  button.button:where(:not(.gform-theme-no-framework)):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  input:is([type='submit'], [type='button'], [type='reset']).button:where(
+    :not(.gform-theme-no-framework)
+  ):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  input:is([type='submit'], [type='button'], [type='reset']):where(
+    :not(.gform-theme-no-framework)
+  ):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ),
+.gform-theme--framework.gform-theme.gform_wrapper
+  input[type='submit'].button.gform_button:where(
+    :not(.gform-theme-no-framework)
+  ):where(
+    :not(.gform-theme__disable):not(.gform-theme__disable *):not(
+        .gform-theme__disable-framework
+      ):not(.gform-theme__disable-framework *)
+  ) {
+  font-size: var(--text-lg) !important;
 }
 
 .gform-theme--framework:where(:not(.gform_editor)) .gfield--type-section {
@@ -153,6 +264,51 @@ Text Domain: laqonto
 .gform-theme--framework .gfield--type-choice .gchoice,
 .gform-theme--framework .gfield--type-choice .ginput_container_consent {
   align-items: center;
+}
+
+.gchoice .gform-field-label {
+  font-size: var(--text-lg) !important;
+  font-weight: 500 !important;
+}
+
+.gform_button {
+  display: inline-block !important;
+  font-weight: 700 !important;
+  border-radius: var(--size-1\.5) !important;
+  line-height: var(--size-18) !important;
+  background-color: var(--color-primary) !important;
+  padding-inline: var(--size-8) !important;
+}
+
+.gform-footer {
+  position: relative !important;
+  justify-content: end !important;
+  background-color: var(--color-orange-100) !important;
+  padding-block-start: var(--size-10) !important;
+  padding-block-end: var(--size-22) !important;
+  padding-inline-start: 0 !important;
+  padding-inline-end: calc(
+    var(--grid-column-width) + var(--grid-gap)
+  ) !important;
+  margin-block-start: var(--size-16) !important;
+}
+
+.gform-footer::before,
+.gform-footer::after {
+  content: '';
+  width: calc((100vw - var(--grid-width-no-gap)) / 2);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: var(--color-orange-100);
+}
+
+.gform-footer::before {
+  left: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+}
+
+.gform-footer::after {
+  right: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
 }
 
 @layer elements {
