@@ -36,6 +36,10 @@ Text Domain: laqonto
   font-size: var(--text-sm) !important;
 }
 
+.page-template-form .page {
+  overflow: hidden;
+}
+
 /**
  * Gravity forms
  */
@@ -126,6 +130,10 @@ Text Domain: laqonto
 .ginput_container > input,
 .ginput_container > select {
   block-size: unset !important;
+}
+
+.gform-theme--foundation .gfield input::placeholder {
+  color: var(--color-grayscale-600);
 }
 
 .gform-theme--framework
@@ -244,7 +252,6 @@ Text Domain: laqonto
   margin-block-start: var(--size-17);
 }
 
-.gform-theme--framework input[type='checkbox']::before,
 .gform-theme--framework input[type='radio']::before {
   width: var(--size-7) !important;
   height: var(--size-7) !important;
@@ -309,6 +316,15 @@ Text Domain: laqonto
 
 .gform-footer::after {
   right: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+}
+
+.gform-theme--framework .gfield--type-multi_choice {
+  align-items: start;
+}
+
+.gform-theme--framework .gfield--type-multi_choice .gfield_radio,
+.gform-theme--framework .gfield--type-multi_choice .gfield_checkbox {
+  flex-direction: column !important;
 }
 
 @layer elements {
