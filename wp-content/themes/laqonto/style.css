@@ -85,46 +85,54 @@ Text Domain: laqonto
   margin-block-start: 0;
 }
 
-.page-template-form .gsection_title {
-  width: calc(
-    (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
-  ) !important;
-  margin-inline-start: calc(
-    (calc(var(--grid-column-width) * 4) + calc(var(--grid-gap) * 4))
-  ) !important;
+@media (min-width: 1314px) {
+  .page-template-form .gsection_title {
+    width: calc(
+      (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
+    ) !important;
+    margin-inline-start: calc(
+      (calc(var(--grid-column-width) * 4) + calc(var(--grid-gap) * 4))
+    ) !important;
+  }
 }
 
-.page-template-form .gfield_label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0 !important;
-  width: calc(
-    (var(--grid-column-width) * 3) + (var(--grid-gap) * 2)
-  ) !important;
-  height: 100%;
-  padding-inline: 0 !important;
-  margin-block-end: 0 !important;
+@media (min-width: 1046px) {
+  .page-template-form .gfield_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 !important;
+    width: calc(
+      (var(--grid-column-width) * 3) + (var(--grid-gap) * 2)
+    ) !important;
+    height: 100%;
+    padding-inline: 0 !important;
+    margin-block-end: 0 !important;
+  }
 }
 
 .gfield--type-textarea .gfield_label {
   height: auto;
 }
 
-.page-template-form .ginput_container {
-  width: calc(
-    (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
-  ) !important;
-  margin-inline-end: calc(
-    (var(--grid-column-width) + var(--grid-gap))
-  ) !important;
+@media (min-width: 1314px) {
+  .page-template-form .ginput_container {
+    width: calc(
+      (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
+    ) !important;
+    margin-inline-end: calc(
+      (var(--grid-column-width) + var(--grid-gap))
+    ) !important;
+  }
 }
 
-.gform-theme--foundation fieldset .ginput_container {
-  margin-inline-start: calc(
-    (var(--grid-column-width) + calc(var(--grid-gap) * 2))
-  );
-  margin-inline-end: 0 !important;
+@media (min-width: 1314px) {
+  .gform-theme--foundation fieldset .ginput_container {
+    margin-inline-start: calc(
+      (var(--grid-column-width) + calc(var(--grid-gap) * 2))
+    );
+    margin-inline-end: 0 !important;
+  }
 }
 
 .ginput_container > input,
@@ -257,9 +265,11 @@ Text Domain: laqonto
   height: var(--size-7) !important;
 }
 
-.gform-theme--foundation fieldset {
-  display: flex !important;
-  align-items: center;
+@media (min-width: 1314px) {
+  .gform-theme--foundation fieldset {
+    display: flex !important;
+    align-items: center;
+  }
 }
 
 .gform-theme--framework .gfield--type-choice .gfield_checkbox,
@@ -279,6 +289,7 @@ Text Domain: laqonto
 }
 
 .gform_button {
+  width: 100% !important;
   display: inline-block !important;
   font-weight: 700 !important;
   border-radius: var(--size-1\.5) !important;
@@ -287,35 +298,68 @@ Text Domain: laqonto
   padding-inline: var(--size-8) !important;
 }
 
+@media (min-width: 1046px) {
+  .gform_button {
+    width: auto !important;
+  }
+}
+
 .gform-footer {
   position: relative !important;
-  justify-content: end !important;
   background-color: var(--color-orange-100) !important;
   padding-block-start: var(--size-10) !important;
   padding-block-end: var(--size-22) !important;
   padding-inline-start: 0 !important;
-  padding-inline-end: calc(
-    var(--grid-column-width) + var(--grid-gap)
-  ) !important;
   margin-block-start: var(--size-16) !important;
+}
+
+@media (min-width: 1046px) {
+  .gform-footer {
+    justify-content: end !important;
+  }
+}
+
+@media (min-width: 1314px) {
+  .gform-footer {
+    padding-inline-end: calc(
+      var(--grid-column-width) + var(--grid-gap)
+    ) !important;
+  }
 }
 
 .gform-footer::before,
 .gform-footer::after {
   content: '';
-  width: calc((100vw - var(--grid-width-no-gap)) / 2);
+  width: var(--size-10);
   height: 100%;
   position: absolute;
   top: 0;
   background-color: var(--color-orange-100);
 }
 
+@media (min-width: 1296px) {
+  .gform-footer::before,
+  .gform-footer::after {
+    width: calc((100vw - var(--grid-width-no-gap)) / 2);
+  }
+}
+
 .gform-footer::before {
-  left: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+  left: calc(var(--size-10) * -1);
 }
 
 .gform-footer::after {
-  right: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+  right: calc(var(--size-10) * -1);
+}
+
+@media (min-width: 1296px) {
+  .gform-footer::before {
+    left: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+  }
+
+  .gform-footer::after {
+    right: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
+  }
 }
 
 .gform-theme--framework .gfield--type-multi_choice {
@@ -325,6 +369,154 @@ Text Domain: laqonto
 .gform-theme--framework .gfield--type-multi_choice .gfield_radio,
 .gform-theme--framework .gfield--type-multi_choice .gfield_checkbox {
   flex-direction: column !important;
+}
+
+@media (max-width: 1045px) {
+  .gform-theme--foundation .left_label .gfield .copy_values_option_container,
+  .gform-theme--foundation
+    .left_label
+    .gfield
+    .gfield_creditcard_warning_message,
+  .gform-theme--foundation .left_label .gfield .gfield_password_strength,
+  .gform-theme--foundation
+    .left_label
+    .gfield
+    > .gfield-admin-wrapper
+    > .ginput_container,
+  .gform-theme--foundation .left_label .gfield > .ginput_container,
+  .gform-theme--foundation .right_label .gfield .copy_values_option_container,
+  .gform-theme--foundation
+    .right_label
+    .gfield
+    .gfield_creditcard_warning_message,
+  .gform-theme--foundation .right_label .gfield .gfield_password_strength,
+  .gform-theme--foundation
+    .right_label
+    .gfield
+    > .gfield-admin-wrapper
+    > .ginput_container,
+  .gform-theme--foundation .right_label .gfield > .ginput_container,
+  .gform-theme--foundation:where(:not(.gform-editor--compact))
+    .left_label
+    .gform-field-label:where(
+      :not([class*='gform-field-label--type-']):not(.gfield_header_item):not(
+          .ginput_quantity_label
+        )
+    ),
+  .gform-theme--foundation:where(:not(.gform-editor--compact))
+    .right_label
+    .gform-field-label:where(
+      :not([class*='gform-field-label--type-']):not(.gfield_header_item):not(
+          .ginput_quantity_label
+        )
+    ) {
+    float: none !important;
+  }
+
+  .gform-theme--foundation
+    .left_label
+    .gfield:where(:not(.gfield--type-html):not(.gfield--type-section))
+    > .gfield-admin-wrapper
+    > div:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .left_label
+    .gfield:where(:not(.gfield--type-html):not(.gfield--type-section))
+    > div:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .left_label
+    .gfield
+    > .gfield-admin-wrapper
+    > .ginput_container:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .left_label
+    .gfield
+    > .ginput_container:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .right_label
+    .gfield:where(:not(.gfield--type-html):not(.gfield--type-section))
+    > .gfield-admin-wrapper
+    > div:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .right_label
+    .gfield:where(:not(.gfield--type-html):not(.gfield--type-section))
+    > div:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .right_label
+    .gfield
+    > .gfield-admin-wrapper
+    > .ginput_container:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ),
+  .gform-theme--foundation
+    .right_label
+    .gfield
+    > .ginput_container:where(
+      :not(.gform-grid-row):not(.ui-resizable-handle):not(
+          .gfield-admin-icons
+        ):not(.gfield-admin-wrapper):not(.gform-compact-view-overflow-menu):not(
+          .admin-hidden-markup
+        ):not(.gfield-compact-icons)
+    ) {
+    inline-size: 100% !important;
+  }
+
+  .gform-theme--foundation:where(:not(.gform-editor--compact))
+    .left_label
+    .gform-field-label:where(
+      :not([class*='gform-field-label--type-']):not(.gfield_header_item):not(
+          .ginput_quantity_label
+        )
+    ),
+  .gform-theme--foundation:where(:not(.gform-editor--compact))
+    .right_label
+    .gform-field-label:where(
+      :not([class*='gform-field-label--type-']):not(.gfield_header_item):not(
+          .ginput_quantity_label
+        )
+    ) {
+    inline-size: 100% !important;
+    margin-block-end: var(--size-4);
+  }
 }
 
 @layer elements {
