@@ -685,7 +685,9 @@ Text Domain: laqonto
    * Header
    */
   .site-header {
+    position: relative;
     width: 100%;
+    z-index: 1000;
   }
 
   .site-header--sticky.is-visible {
@@ -699,7 +701,6 @@ Text Domain: laqonto
     background-color: var(--color-grayscale-white);
     opacity: 0;
     visibility: hidden;
-    z-index: 1000;
     transition: opacity 0.2s, visibility 0.2s;
   }
 
@@ -797,17 +798,72 @@ Text Domain: laqonto
   /**
    * Hero
    */
-  .hero {
+  .hero-subheader {
+    position: relative;
     display: flex;
     align-items: end;
     height: 100dvh;
     max-height: var(--size-198);
     padding-block-end: var(--size-15);
+    padding-inline: var(--size-4);
+    margin-inline: calc(var(--size-4) * -1);
+    margin-block-start: calc(var(--size-27) * -1);
   }
 
-  .hero__inner {
+  @media (min-width: 1024px) {
+    .hero-subheader {
+      padding-inline: var(--size-6);
+      margin-inline: calc(var(--size-6) * -1);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero-subheader {
+      padding-inline: var(--size-10);
+      margin-inline: calc(var(--size-10) * -1);
+    }
+  }
+
+  .hero-subheader__inner {
     width: 100%;
     max-width: var(--size-137);
+  }
+
+  .hero-subheader__heading {
+    font-size: var(--text-6xl);
+  }
+
+  @media (min-width: 640px) {
+    .hero-subheader__heading {
+      font-size: var(--text-7xl);
+    }
+  }
+
+  .hero-subheader__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  .hero-subheader__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    border-end-start-radius: var(--size-2);
+    border-end-end-radius: var(--size-2);
+  }
+
+  @media (min-width: 640px) {
+    .hero-subheader__background {
+      border-end-start-radius: var(--size-4);
+      border-end-end-radius: var(--size-4);
+    }
   }
 
   /**
@@ -822,7 +878,7 @@ Text Domain: laqonto
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--size-2);
-    margin-inline: calc(var(--grid-gap-mobile) * -1);
+    margin-inline: calc(var(--size-4) * -1);
   }
 
   @media (min-width: 640px) {
@@ -832,7 +888,12 @@ Text Domain: laqonto
       background-position: bottom left;
       background-size: auto;
       border-radius: var(--size-4);
-      margin-inline: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-cta {
+      margin-inline: calc(var(--size-6) * -1);
     }
   }
 
@@ -852,8 +913,8 @@ Text Domain: laqonto
     background-color: var(--color-grayscale-white);
     position: absolute;
     bottom: calc(var(--size-68) * -1);
-    left: var(--size-3);
-    right: var(--size-3);
+    left: var(--size-4);
+    right: var(--size-4);
     padding-inline: var(--size-4);
     padding-block-start: var(--size-1);
     padding-block-end: var(--size-5);
@@ -864,10 +925,20 @@ Text Domain: laqonto
       width: var(--size-126);
       height: var(--size-126);
       bottom: var(--size-10);
-      left: var(--size-10);
       right: auto;
-      padding-inline: var(--size-7);
       padding-block-end: var(--size-7);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-cta__content {
+      left: var(--size-6);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero-cta__content {
+      left: var(--size-10);
     }
   }
 
@@ -893,14 +964,19 @@ Text Domain: laqonto
     position: relative;
     border-radius: var(--size-2);
     overflow: hidden;
-    margin-inline: calc(var(--grid-gap-mobile) * -1);
+    margin-inline: calc(var(--size-4) * -1);
   }
 
   @media (min-width: 640px) {
     .hero {
       height: var(--size-180);
       border-radius: var(--size-4);
-      margin-inline: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      margin-inline: calc(var(--size-6) * -1);
     }
   }
 
@@ -927,19 +1003,25 @@ Text Domain: laqonto
     position: absolute;
     top: 0;
     right: 0;
-    padding: var(--size-3);
+    padding: var(--size-4);
   }
 
   @media (min-width: 640px) {
     .hero__content {
       font-size: var(--text-6xl);
-      padding: var(--size-9);
     }
   }
 
   @media (min-width: 1024px) {
     .hero__content {
       width: 55%;
+      padding: var(--size-6);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero__content {
+      padding: var(--size-10);
     }
   }
 
