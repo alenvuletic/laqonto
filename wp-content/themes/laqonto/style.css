@@ -551,27 +551,63 @@ Text Domain: laqonto
   }
 
   h1 {
-    font-size: var(--text-7xl);
-  }
-
-  h2 {
     font-size: var(--text-6xl);
   }
 
-  h3 {
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: var(--text-7xl);
+    }
+  }
+
+  h2 {
     font-size: var(--text-5xl);
   }
 
-  h4 {
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: var(--text-6xl);
+    }
+  }
+
+  h3 {
     font-size: var(--text-4xl);
   }
 
-  h5 {
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: var(--text-5xl);
+    }
+  }
+
+  h4 {
     font-size: var(--text-3xl);
   }
 
-  h6 {
+  @media (min-width: 1024px) {
+    h4 {
+      font-size: var(--text-4xl);
+    }
+  }
+
+  h5 {
     font-size: var(--text-2xl);
+  }
+
+  @media (min-width: 1024px) {
+    h5 {
+      font-size: var(--text-3xl);
+    }
+  }
+
+  h6 {
+    font-size: var(--text-xl);
+  }
+
+  @media (min-width: 1024px) {
+    h6 {
+      font-size: var(--text-2xl);
+    }
   }
 
   /**
@@ -827,16 +863,6 @@ Text Domain: laqonto
   .hero-subheader__inner {
     width: 100%;
     max-width: var(--size-137);
-  }
-
-  .hero-subheader__heading {
-    font-size: var(--text-6xl);
-  }
-
-  @media (min-width: 640px) {
-    .hero-subheader__heading {
-      font-size: var(--text-7xl);
-    }
   }
 
   .hero-subheader__arrow {
@@ -1495,6 +1521,10 @@ Text Domain: laqonto
     margin-block-start: var(--size-15);
   }
 
+  .mt-30 {
+    margin-block-start: var(--size-30);
+  }
+
   .mt-35 {
     margin-block-start: var(--size-35);
   }
@@ -1554,6 +1584,10 @@ Text Domain: laqonto
 
     .lg\:mt-15 {
       margin-block-start: var(--size-15);
+    }
+
+    .lg\:mt-30 {
+      margin-block-start: var(--size-30);
     }
 
     .lg\:mt-35 {
@@ -1645,6 +1679,14 @@ Text Domain: laqonto
     margin-block-end: var(--size-35);
   }
 
+  .mb-45 {
+    margin-block-end: var(--size-45);
+  }
+
+  .mb-55 {
+    margin-block-end: var(--size-55);
+  }
+
   @media (min-width: 1024px) {
     .lg\:mb-1 {
       margin-block-end: var(--size-1);
@@ -1708,6 +1750,14 @@ Text Domain: laqonto
 
     .lg\:mb-35 {
       margin-block-end: var(--size-35);
+    }
+
+    .lg\:mb-45 {
+      margin-block-end: var(--size-45);
+    }
+
+    .lg\:mb-55 {
+      margin-block-end: var(--size-55);
     }
   }
 
