@@ -28,6 +28,28 @@
   </div>
 </div>
 
+<div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
+  <div class="col-span-12 lg:col-span-6">
+    <h2 class="text-primary text-8xl lg:text-9xl">Usluge</h2>
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <div class="accordion mt-22 lg:mt-6">
+      <div data-accordion-group class="accordion-group">
+        <button data-accordion-toggle data-value="item-1" class="accordion-toggle">Vođenje financijskog knjigovodstva</button>
+        <div data-accordion-panel data-value="item-1" class="accordion-panel">
+          <p>Za potrebe poduzeća, obrtnika i slobodnih zanimanja i drugih, Savjetovanje preuzima brigu pripreme profesionalno izrađenog financijskog izvještaja, ovisno o pravnom obliku i vrsti financijskog izvještaja. Pri tome se na prvom mjestu uvijek nalazi klijent, te se financijski izvještaj prilagođava njegovim potrebama, naravno, u skladu s zakonom.</p>
+        </div>
+      </div>
+      <div data-accordion-group class="accordion-group">
+        <button data-accordion-toggle data-value="item-2" class="accordion-toggle">Obračun plaća</button>
+        <div data-accordion-panel data-value="item-2" class="accordion-panel">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sunt omnis nulla voluptates itaque, facere atque eius? Ipsa tempore pariatur ad? Voluptate tenetur officiis quas accusantium in exercitationem sequi ipsam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="hero text-white">
     <?php echo wp_get_attachment_image( 11, array( "1328", "720" ), false, array( "class" => "hero__background" ) ); ?>

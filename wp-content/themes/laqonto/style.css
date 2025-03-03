@@ -832,7 +832,7 @@ Text Domain: laqonto
   }
 
   /**
-   * Hero
+   * Hero subheader
    */
   .hero-subheader {
     position: relative;
@@ -1439,6 +1439,63 @@ Text Domain: laqonto
     flex-shrink: 0;
     margin-block-start: var(--size-1);
   }
+
+  /**
+   * Accordion
+   */
+  .accordion-group {
+    border-block: 1px solid var(--color-grayscale-400);
+    margin-block-start: -1px;
+  }
+
+  .accordion-group[data-expanded='true'] {
+    border-block-start: 2px solid var(--color-grayscale-800);
+  }
+
+  .accordion-toggle {
+    position: relative;
+    width: 100%;
+    font-size: var(--text-xl);
+    line-height: 1.15;
+    text-align: start;
+    padding-inline-end: var(--size-10);
+    padding-block-start: var(--size-7);
+    padding-block-end: var(--size-7);
+  }
+
+  @media (min-width: 1024px) {
+    .accordion-toggle {
+      font-size: var(--text-2xl);
+    }
+  }
+
+  .accordion-toggle::after {
+    content: '';
+    display: block;
+    width: var(--size-6);
+    height: var(--size-6);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-image: url('images/layout/select-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  .accordion-group[data-expanded='false'] .accordion-toggle::after {
+    transform: translateY(-50%);
+  }
+
+  .accordion-panel {
+    display: block;
+    padding-block-end: var(--size-8);
+  }
+
+  .accordion-group[data-expanded='false'] .accordion-panel {
+    display: none;
+  }
 }
 
 @layer utilities {
@@ -1468,6 +1525,31 @@ Text Domain: laqonto
    */
   .text-white {
     color: var(--color-grayscale-white);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  /**
+   * Font Size
+   */
+  .text-8xl {
+    font-size: var(--text-8xl);
+  }
+
+  .text-9xl {
+    font-size: var(--text-9xl);
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:text-8xl {
+      font-size: var(--text-8xl);
+    }
+
+    .lg\:text-9xl {
+      font-size: var(--text-9xl);
+    }
   }
 
   /**
@@ -1519,6 +1601,10 @@ Text Domain: laqonto
 
   .mt-15 {
     margin-block-start: var(--size-15);
+  }
+
+  .mt-22 {
+    margin-block-start: var(--size-22);
   }
 
   .mt-30 {
@@ -1584,6 +1670,10 @@ Text Domain: laqonto
 
     .lg\:mt-15 {
       margin-block-start: var(--size-15);
+    }
+
+    .lg\:mt-22 {
+      margin-block-start: var(--size-22);
     }
 
     .lg\:mt-30 {
