@@ -1496,6 +1496,52 @@ Text Domain: laqonto
   .accordion-group[data-expanded='false'] .accordion-panel {
     display: none;
   }
+
+  /**
+   * Stats grid
+   */
+  .stats-grid {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    row-gap: var(--size-12);
+  }
+
+  .stats-grid__item {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .stats-grid__item {
+      flex-basis: 25%;
+    }
+  }
+
+  .stats-grid__number {
+    color: var(--color-primary);
+    font-size: var(--text-8xl);
+    font-family: var(--font-family-display);
+    line-height: 1;
+  }
+
+  @media (min-width: 1024px) {
+    .stats-grid__number {
+      font-size: var(--text-9xl);
+    }
+  }
+
+  .stats-grid__label {
+    font-size: var(--text-sm);
+    margin-block-start: var(--size-4);
+  }
+
+  @media (min-width: 1024px) {
+    .stats-grid__label {
+      font-size: var(--text-md);
+    }
+  }
 }
 
 @layer utilities {
@@ -1534,6 +1580,14 @@ Text Domain: laqonto
   /**
    * Font Size
    */
+  .text-xl {
+    font-size: var(--text-xl);
+  }
+
+  .text-2xl {
+    font-size: var(--text-2xl);
+  }
+
   .text-8xl {
     font-size: var(--text-8xl);
   }
@@ -1543,6 +1597,14 @@ Text Domain: laqonto
   }
 
   @media (min-width: 1024px) {
+    .lg\:text-xl {
+      font-size: var(--text-xl);
+    }
+
+    .lg\:text-2xl {
+      font-size: var(--text-2xl);
+    }
+
     .lg\:text-8xl {
       font-size: var(--text-8xl);
     }
@@ -1605,6 +1667,10 @@ Text Domain: laqonto
 
   .mt-22 {
     margin-block-start: var(--size-22);
+  }
+
+  .mt-28 {
+    margin-block-start: var(--size-28);
   }
 
   .mt-30 {
@@ -1674,6 +1740,10 @@ Text Domain: laqonto
 
     .lg\:mt-22 {
       margin-block-start: var(--size-22);
+    }
+
+    .lg\:mt-28 {
+      margin-block-start: var(--size-28);
     }
 
     .lg\:mt-30 {

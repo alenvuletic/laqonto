@@ -59,4 +59,35 @@
   </div>
 </div>
 
+<div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
+  <div class="col-span-12 lg:col-span-6">
+    <h2 class="text-primary text-8xl lg:text-9xl">O nama</h2>
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
+      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+    </div>
+  </div>
+  <div class="col-span-12 mt-12 lg:mt-28">
+    <div class="stats-grid">
+      <div class="stats-grid__item">
+        <p class="stats-grid__number">07</p>
+        <p class="stats-grid__label">iskusnih<br class="lg:hidden" /> zaposlenika</p>
+      </div>
+      <div class="stats-grid__item">
+        <p class="stats-grid__number">15</p>
+        <p class="stats-grid__label">godina<br class="lg:hidden" /> iskustva</p>
+      </div>
+      <div class="stats-grid__item">
+        <p class="stats-grid__number">90+</p>
+        <p class="stats-grid__label">zadovoljnih<br class="lg:hidden" /> partnera</p>
+      </div>
+      <div class="stats-grid__item">
+        <a href="#" class="button button--primary button--small button--rounded">Pošalji upit</a>
+        <p class="stats-grid__label">zatraži company<br class="lg:hidden" /> profile</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php get_footer(); ?>
