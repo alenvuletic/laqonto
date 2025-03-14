@@ -1,5 +1,11 @@
 @layer settings, generic, elements, components, utilities;
 
+:root {
+  /* Swiper */
+  --swiper-theme-color: var(--color-grayscale-white);
+  --swiper-navigation-size: var(--size-15);
+}
+
 @layer settings {
   :root {
     /* Colors */

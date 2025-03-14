@@ -1542,6 +1542,117 @@ Text Domain: laqonto
       font-size: var(--text-md);
     }
   }
+
+  /**
+   * Slider
+   */
+  .slider {
+    padding-block-end: var(--size-20) !important;
+  }
+
+  @media (min-width: 1024px) {
+    .slider {
+      padding-block-end: var(--size-14) !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .slider .swiper-slide {
+      padding-inline-end: var(--size-27);
+    }
+  }
+
+  .slider .swiper-button-prev,
+  .slider .swiper-button-next {
+    width: var(--size-15) !important;
+    border-radius: var(--size-\.5);
+    background-color: var(--color-primary);
+    margin-top: calc(var(--size-14) * -1) !important;
+  }
+
+  .slider .swiper-button-prev {
+    top: auto !important;
+    bottom: 0 !important;
+    right: var(--size-20) !important;
+    left: auto !important;
+  }
+
+  @media (min-width: 1024px) {
+    .slider .swiper-button-prev {
+      top: calc(50% + 10px) !important;
+      right: 0 !important;
+      transform: translateY(50%);
+    }
+  }
+
+  .slider .swiper-button-next {
+    top: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
+
+  @media (min-width: 1024px) {
+    .slider .swiper-button-next {
+      top: calc(50% - 10px) !important;
+      transform: translateY(-50%);
+    }
+  }
+
+  .slider .swiper-button-prev::after,
+  .slider .swiper-button-next::after {
+    content: '' !important;
+    width: var(--size-4);
+    height: 1.625rem;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slider .swiper-button-prev::after {
+    background-image: url('images/layout/slider-arrow-prev.svg');
+  }
+
+  .slider .swiper-button-next::after {
+    background-image: url('images/layout/slider-arrow-next.svg');
+  }
+
+  .slider .swiper-pagination {
+    text-align: start !important;
+    bottom: 1.125rem !important;
+  }
+
+  @media (min-width: 1024px) {
+    .slider .swiper-pagination {
+      bottom: 0 !important;
+    }
+  }
+
+  /**
+   * Slider box
+   */
+  .slider-box {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--size-1);
+    background-color: var(--color-orange-100);
+    overflow: hidden;
+  }
+
+  .slider-box__content {
+    position: absolute;
+    bottom: var(--size-6);
+    left: 0;
+    padding-inline: var(--size-7);
+  }
+
+  .slider-box__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 @layer utilities {
@@ -1588,6 +1699,10 @@ Text Domain: laqonto
     font-size: var(--text-2xl);
   }
 
+  .text-5xl {
+    font-size: var(--text-5xl);
+  }
+
   .text-8xl {
     font-size: var(--text-8xl);
   }
@@ -1605,6 +1720,10 @@ Text Domain: laqonto
       font-size: var(--text-2xl);
     }
 
+    .lg\:text-5xl {
+      font-size: var(--text-5xl);
+    }
+
     .lg\:text-8xl {
       font-size: var(--text-8xl);
     }
@@ -1612,6 +1731,20 @@ Text Domain: laqonto
     .lg\:text-9xl {
       font-size: var(--text-9xl);
     }
+  }
+
+  /**
+   * Font Family
+   */
+  .font-display {
+    font-family: var(--font-family-display);
+  }
+
+  /**
+   * Line Height
+   */
+  .leading-none {
+    line-height: 1;
   }
 
   /**

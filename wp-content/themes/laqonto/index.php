@@ -90,4 +90,51 @@
   </div>
 </div>
 
+<div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
+  <div class="col-span-12 lg:col-span-6">
+    <h2 class="text-primary text-8xl lg:text-9xl">Naš tim</h2>
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
+      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+    </div>
+  </div>
+  <div class="col-span-12 mt-12 lg:mt-28">
+    <div class="swiper slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
+              <p>Knjigovodstveni stručnjak</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
+              <p>Knjigovodstveni stručnjak</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
+              <p>Knjigovodstveni stručnjak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+
 <?php get_footer(); ?>
