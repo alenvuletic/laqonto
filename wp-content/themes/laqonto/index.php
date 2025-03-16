@@ -91,6 +91,9 @@
 </div>
 
 <div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
+  <div class="col-span-12">
+    <hr class="divider mb-2">
+  </div>
   <div class="col-span-12 lg:col-span-6">
     <h2 class="text-primary text-8xl lg:text-9xl">Naš tim</h2>
   </div>
@@ -125,6 +128,59 @@
             <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
             <div class="slider-box__content text-white">
               <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
+              <p>Knjigovodstveni stručnjak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+
+<div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
+  <div class="col-span-12">
+    <hr class="divider mb-2">
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <h2 class="text-primary text-8xl lg:text-9xl">Naši partneri</h2>
+  </div>
+  <div class="col-span-12 lg:col-span-6">
+    <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
+      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+    </div>
+  </div>
+  <div class="col-span-12 mt-12 lg:mt-28">
+    <div class="swiper slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p class="mb-2">Izuzetno smo zadovoljni sa knjigovodstvenim servisom R.S. Bonum d.o.o., te ako ste u potrazi za knjigovodstvenim uslugama na najvišoj mogućoj razini onda je naša preporuka svakako R.S. Bonum.</p>
+              <p>Svaki posao odrađen je profesionalno i brzo, komunikacija je jednostavna i ugodna, te dostupna u svakom trenutku. Surađujemo od samih početaka našeg poslovanja, te su nam uvelike pomogli u pokretanju našeg poslovanja na čemu smo neizmjerno zahvalni!</p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Mario Antunović</p>
+              <p>Knjigovodstveni stručnjak</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p class="mb-2">Osoba je to kojoj je knjigovodstvo više od posla, a s klijentima ima puno više od poslovnog odnosa. Za svakog klijenta/tvrtku skrbi kao da je njena te se pobrine da dobije sve što mu pripada.</p>
+              <p>Redovito obavještava svoje klijente o svim novinama i promjenama zakona te predlaže nova rješenja.</p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Konoba More</p>
+              <p>Miljenko Šuperak</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p class="mb-2">Izuzetno smo zadovoljni sa knjigovodstvenim servisom R.S. Bonum d.o.o., te ako ste u potrazi za knjigovodstvenim uslugama na najvišoj mogućoj razini onda je naša preporuka svakako R.S. Bonum.</p>
+              <p>Svaki posao odrađen je profesionalno i brzo, komunikacija je jednostavna i ugodna, te dostupna u svakom trenutku. Surađujemo od samih početaka našeg poslovanja, te su nam uvelike pomogli u pokretanju našeg poslovanja na čemu smo neizmjerno zahvalni!</p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Mario Antunović</p>
               <p>Knjigovodstveni stručnjak</p>
             </div>
           </div>
