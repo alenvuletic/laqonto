@@ -35,10 +35,10 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="#services" class="site-header-nav__link">Usluge</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link">Usluge</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#about-us" class="site-header-nav__link">O nama</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link">O nama</a>
             </li>
             <li class="site-header-nav__item">
               <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
@@ -63,10 +63,10 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="#services" class="site-header-nav__link">Usluge</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link">Usluge</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#about-us" class="site-header-nav__link">O nama</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link">O nama</a>
             </li>
             <li class="site-header-nav__item">
               <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
