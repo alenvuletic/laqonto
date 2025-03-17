@@ -15,7 +15,10 @@
 <div class="grid mt-30 mb-45 lg:mb-55">
   <div class="col-span-12 lg:col-span-7 lg:col-start-5 ms-auto">
     <h2 class="mb-10 lg:mb-12">Vođenje usluga financijskog knjigovodstva, prilagođene potrebama vašeg poslovanja.</h2>
-    <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+    <div class="content-block">
+      <p>Brinemo o vašim financijama – vođenje knjigovodstva, obračun plaća, poslovno savjetovanje i financijsko izvještavanje. Usklađujemo vaše poslovanje sa zakonom i pojednostavljujemo administraciju.</p>
+      <p>Fokusirajte se na rast, a papirologiju prepustite nama!</p>
+    </div>
   </div>
 </div>
 
@@ -39,13 +42,60 @@
       <div data-accordion-group class="accordion-group">
         <button data-accordion-toggle data-value="item-1" class="accordion-toggle">Vođenje financijskog knjigovodstva</button>
         <div data-accordion-panel data-value="item-1" class="accordion-panel">
-          <p>Za potrebe poduzeća, obrtnika i slobodnih zanimanja i drugih, Savjetovanje preuzima brigu pripreme profesionalno izrađenog financijskog izvještaja, ovisno o pravnom obliku i vrsti financijskog izvještaja. Pri tome se na prvom mjestu uvijek nalazi klijent, te se financijski izvještaj prilagođava njegovim potrebama, naravno, u skladu s zakonom.</p>
+          <div class="content-block">
+            <p>Vođenje financijskog knjigovodstva obuhvaća precizno evidentiranje svih poslovnih transakcija, izradu financijskih izvještaja te praćenje potraživanja i obveza. Ključni cilj je osigurati točne i ažurne financijske podatke koji omogućuju donošenje pravih poslovnih odluka te usklađenost sa zakonskim propisima. Naš tim osigurava stručnu i pouzdanu podršku kako bi vaše poslovanje bilo stabilno i transparentno.</p>
+          </div>
         </div>
       </div>
       <div data-accordion-group class="accordion-group">
         <button data-accordion-toggle data-value="item-2" class="accordion-toggle">Obračun plaća</button>
         <div data-accordion-panel data-value="item-2" class="accordion-panel">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sunt omnis nulla voluptates itaque, facere atque eius? Ipsa tempore pariatur ad? Voluptate tenetur officiis quas accusantium in exercitationem sequi ipsam.</p>
+          <div class="content-block">
+            <p>Pojednostavite svoje poslovanje i prepustite obračun plaća našem stručnom timu. Osiguravamo točan i pravodoban obračun plaća, doprinosa i drugog dohotka, uz potpuno poštivanje zakonskih propisa. Brinemo o izradi ugovora o radu, prijavama i odjavama zaposlenika, evidenciji radnog vremena te podnošenju svih potrebnih izvještaja.</p>
+            <p>Naš cilj je osigurati pouzdan i efikasan sustav obračuna plaća, uz sigurnost i usklađenost s važećim zakonodavstvom.</p>
+          </div>
+        </div>
+      </div>
+      <div data-accordion-group class="accordion-group">
+        <button data-accordion-toggle data-value="item-3" class="accordion-toggle">Poslovno savjetovanje</button>
+        <div data-accordion-panel data-value="item-3" class="accordion-panel">
+          <div class="content-block">
+            <p>Pružamo sveobuhvatne usluge poslovnog savjetovanja kako bismo vam pomogli u postizanju financijske stabilnosti i održivog rasta. Naš tim analizira vaše poslovne procese i predlaže strategije za optimizaciju troškova, efikasnije upravljanje financijama te usklađenost s poreznim i zakonskim zahtjevima.</p>
+            <p>Fokusiramo se na:</p>
+            <ul>
+              <li>Financijsko planiranje i analizu</li>
+              <li>Strateško savjetovanje</li>
+              <li>Optimizaciju poslovnih procesa</li>
+              <li>Upravljanje rizicima</li>
+              <li>Planiranje poreza i izvještavanje</li>
+            </ul>
+            <p>Naš cilj je osigurati da vaše poslovanje bude učinkovito, konkurentno i dugoročno održivo.</p>
+          </div>
+        </div>
+      </div>
+      <div data-accordion-group class="accordion-group">
+        <button data-accordion-toggle data-value="item-4" class="accordion-toggle">Financijsko izvještavanje</button>
+        <div data-accordion-panel data-value="item-4" class="accordion-panel">
+          <div class="content-block">
+            <p>Precizno i pravovremeno financijsko izvještavanje ključno je za uspješno poslovanje i usklađenost s propisima. Naš računovodstveni ured priprema, obrađuje i podnosi financijske izvještaje nadležnim institucijama, omogućujući vam fokus na rast poslovanja bez administrativnih opterećenja, pružajući sigurnost i jasan uvid u vaše financije.</p>
+            <p>Naše usluge uključuju:</p>
+            <ul>
+              <li>Pripremu godišnjih financijskih izvještaja (bilanca, račun dobiti i gubitka, bilješke, odluke)</li>
+              <li>Podnošenje obveznih izvještaja Poreznoj upravi (PDV obrasci, porezne prijave, ZP)</li>
+              <li>Praćenje financijskih rezultata i izrada prilagođenih izvještaja</li>
+              <li>Izvještavanje o isplatama dohodaka i naknadama</li>
+              <li>Redovite analize i sastanke o financijskom stanju vašeg poslovanja</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div data-accordion-group class="accordion-group">
+        <button data-accordion-toggle data-value="item-5" class="accordion-toggle">Izrada izlaznih računa i slanje e-računa</button>
+        <div data-accordion-panel data-value="item-5" class="accordion-panel">
+          <div class="content-block">
+            <p>Pomažemo vam u izdavanju e-računa i prilagodbi novim zakonskim zahtjevima. Naš računovodstveni ured izdaje izlazne račune u vaše ime i osigurava njihovu brzu i sigurnu dostavu prema važećim standardima.</p>
+            <p>Budući da je od 2024. godine obvezno slanje e-računa (B2G), a od 2025. godine stupaju na snagu novi propisi, pružamo vam stručnu podršku i pojednostavljujemo cijeli proces kako biste poslovali bez prepreka.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -69,7 +119,7 @@
   </div>
   <div class="col-span-12 lg:col-span-6">
     <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
-      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+      <p>LAQONTO, osnovan 1997. godine, pruža precizne i pouzdane knjigovodstvene usluge poduzetnicima i obrtnicima. Kroz digitalizaciju, stručnost i individualni pristup, pojednostavljujemo poslovanje i osiguravamo financijsku sigurnost. Dostupni smo lokalno, širom Hrvatske i online.</p>
     </div>
   </div>
   <div class="col-span-12 mt-12 lg:mt-28">
@@ -103,7 +153,7 @@
   </div>
   <div class="col-span-12 lg:col-span-6">
     <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
-      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+      <p>Naš tim čine iskusni i predani stručnjaci koji osiguravaju točnost, pouzdanost i pravovremenu podršku u svim knjigovodstvenim i financijskim procesima. S individualnim pristupom i dugogodišnjim iskustvom, brinemo o vašem poslovanju kako biste se mogli posvetiti svojim ciljevima i uspjehu.</p>
     </div>
   </div>
   <div class="col-span-12 mt-12 lg:mt-28">
@@ -153,7 +203,7 @@
   </div>
   <div class="col-span-12 lg:col-span-6">
     <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
-      <p>Pružamo precizno evidentiranje svih financijskih transakcija, izradu financijskih izvještaja, praćenje potraživanja i obveza, te redovito podnošenje zakonskih izvješća.</p>
+      <p>Naši klijenti dolaze iz različitih industrija, od malih poduzetnika i obrtnika do srednjih tvrtki i slobodnih zanimanja. Pružamo im precizne, pouzdane i prilagođene knjigovodstvene usluge, omogućujući im sigurnost i jednostavnije poslovanje. Povjerenje naših klijenata rezultat je dugogodišnje stručnosti, individualnog pristupa i pravovremene podrške.</p>
     </div>
   </div>
   <div class="col-span-12 mt-12 lg:mt-28">

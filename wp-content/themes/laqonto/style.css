@@ -1661,6 +1661,40 @@ Text Domain: laqonto
     position: relative;
     top: calc(var(--size-18) * -1);
   }
+
+  /**
+   * Content block
+   */
+  .content-block p,
+  .content-block ul,
+  .content-block ol {
+    margin-block-end: var(--size-5);
+  }
+
+  .content-block ul li {
+    position: relative;
+    padding-inline-start: var(--size-5);
+  }
+
+  .content-block ul li::before {
+    content: '';
+    display: block;
+    width: var(--size-2);
+    height: var(--size-2);
+    border-radius: var(--size-2);
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  .content-block ul li + li {
+    margin-block-start: var(--size-1);
+  }
+
+  .content-block :last-child {
+    margin-block-end: 0;
+  }
 }
 
 @layer utilities {
