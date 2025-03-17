@@ -1653,6 +1653,14 @@ Text Domain: laqonto
     top: 0;
     left: 0;
   }
+
+  /**
+   * Anchor offset
+   */
+  .anchor-offset {
+    position: relative;
+    top: calc(var(--size-18) * -1);
+  }
 }
 
 @layer utilities {

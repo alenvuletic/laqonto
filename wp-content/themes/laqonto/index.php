@@ -28,6 +28,8 @@
   </div>
 </div>
 
+<div class="anchor-offset" id="services"></div>
+
 <div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
   <div class="col-span-12 lg:col-span-6">
     <h2 class="text-primary text-8xl lg:text-9xl">Usluge</h2>
@@ -59,6 +61,8 @@
   </div>
 </div>
 
+<div class="anchor-offset" id="about-us"></div>
+
 <div class="grid mt-6 lg:mt-12 mb-45 lg:mb-55">
   <div class="col-span-12 lg:col-span-6">
     <h2 class="text-primary text-8xl lg:text-9xl">O nama</h2>
@@ -83,7 +87,7 @@
         <p class="stats-grid__label">zadovoljnih<br class="lg:hidden" /> partnera</p>
       </div>
       <div class="stats-grid__item">
-        <a href="#" class="button button--primary button--small button--rounded">Pošalji upit</a>
+        <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
         <p class="stats-grid__label">zatraži company<br class="lg:hidden" /> profile</p>
       </div>
     </div>

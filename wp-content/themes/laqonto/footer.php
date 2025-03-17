@@ -28,14 +28,6 @@
                 <span>LinkedIn</span>
               </a>
             </li>
-            <li class="list-arrow__item">
-              <a href="#" class="list-arrow__link">
-                <i class="list-arrow__icon">
-                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
-                </i>
-                <span>Facebook</span>
-              </a>
-            </li>
           </ul>
         </div>
         <div class="col-span-12 mt-35 lg:mt-67 order-3">

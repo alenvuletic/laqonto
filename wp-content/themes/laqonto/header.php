@@ -35,13 +35,13 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="#" class="site-header-nav__link">Usluge</a>
+              <a href="#services" class="site-header-nav__link">Usluge</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#" class="site-header-nav__link">O nama</a>
+              <a href="#about-us" class="site-header-nav__link">O nama</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#" class="button button--primary button--small button--rounded">Kontakt</a>
+              <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
             </li>
           </ul>
         </nav>
@@ -63,13 +63,13 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="#" class="site-header-nav__link">Usluge</a>
+              <a href="#services" class="site-header-nav__link">Usluge</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#" class="site-header-nav__link">O nama</a>
+              <a href="#about-us" class="site-header-nav__link">O nama</a>
             </li>
             <li class="site-header-nav__item">
-              <a href="#" class="button button--primary button--small button--rounded">Kontakt</a>
+              <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
             </li>
           </ul>
         </nav>
@@ -88,13 +88,10 @@
           <nav>
             <ul class="offcanvas-nav">
               <li class="offcanvas-nav__item is-current">
-                <a href="https://example.com" class="offcanvas-nav__link">Naslovnica</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link">Naslovnica</a>
               </li>
               <li class="offcanvas-nav__item">
-                <a href="https://example.com" class="offcanvas-nav__link">Kontakt</a>
-              </li>
-              <li class="offcanvas-nav__item">
-                <a href="https://example.com" class="offcanvas-nav__link">Zatraži ponudu</a>
+                <a href="/ponuda" class="offcanvas-nav__link">Zatraži ponudu</a>
               </li>
             </ul>
           </nav>
@@ -115,14 +112,6 @@
                   <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
                 <span>LinkedIn</span>
-              </a>
-            </li>
-            <li class="list-arrow__item">
-              <a href="#" class="list-arrow__link">
-                <i class="list-arrow__icon">
-                  <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
-                </i>
-                <span>Facebook</span>
               </a>
             </li>
           </ul>
