@@ -8,7 +8,7 @@
     <div class="hero-subheader__arrow">
       <svg width="32" height="77" viewBox="0 0 32 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 62C5 62 8 62.7222 10 65.6111C11.6 67.9222 14.6667 72.8333 16 75C17.3333 72.8333 20.4 67.9222 22 65.6111C23.9375 62.8125 27 62 32 62" stroke="#FC663D" stroke-width="4" stroke-linejoin="bevel"/><path d="M16 60L16 0" stroke="#FC663D" stroke-width="4"/></svg>
     </div>
-    <img class="hero-subheader__background" src="https://placehold.co/1328x720" alt="">
+    <img class="hero-subheader__background" src="<?php echo esc_url( get_template_directory_uri() . '/images/content/homepage-1.webp' ); ?>" alt="" >
   </div>
 </div>
 
@@ -24,8 +24,8 @@
 
 <div class="container">
   <div class="hero">
-    <img class="hero__background" src="https://placehold.co/1328x720" alt="">
-    <div class="hero__content">
+    <img class="hero__background" src="<?php echo esc_url( get_template_directory_uri() . '/images/content/homepage-2.webp' ); ?>" alt="" >
+    <div class="hero__content text-white">
       <p>Moderno knjigovodstvo, prilagođeno tvom poslovanju.</p>
     </div>
   </div>
@@ -104,7 +104,7 @@
 
 <div class="container">
   <div class="hero text-white">
-    <img class="hero__background" src="https://placehold.co/1328x720" alt="">
+    <img class="hero__background" src="<?php echo esc_url( get_template_directory_uri() . '/images/content/homepage-3.webp' ); ?>" alt="" >
     <div class="hero__content">
       <p>Digitalno knjigovodstvo koje ide u korak s tvojim biznisom.</p>
     </div>
@@ -125,11 +125,11 @@
   <div class="col-span-12 mt-12 lg:mt-28">
     <div class="stats-grid">
       <div class="stats-grid__item">
-        <p class="stats-grid__number">07</p>
+        <p class="stats-grid__number">11</p>
         <p class="stats-grid__label">iskusnih<br class="lg:hidden" /> zaposlenika</p>
       </div>
       <div class="stats-grid__item">
-        <p class="stats-grid__number">15</p>
+        <p class="stats-grid__number">28</p>
         <p class="stats-grid__label">godina<br class="lg:hidden" /> iskustva</p>
       </div>
       <div class="stats-grid__item">
