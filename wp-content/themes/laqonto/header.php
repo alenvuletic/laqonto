@@ -107,7 +107,7 @@
           <p class="offcanvas__title">Povežimo se</p>
           <ul class="list-arrow">
             <li class="list-arrow__item">
-              <a href="#" class="list-arrow__link">
+              <a href="https://linkedin.com/company/laqonto" target="_blank" class="list-arrow__link">
                 <i class="list-arrow__icon">
                   <?php include get_theme_file_path( '/icons/arrow-right.svg' ); ?>
                 </i>
