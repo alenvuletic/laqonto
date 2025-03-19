@@ -1319,12 +1319,14 @@ Text Domain: laqonto
     margin-block-end: var(--size-5);
   }
 
-  .entry-content p {
+  .entry-content p,
+  .entry-content li {
     font-size: var(--text-sm);
   }
 
   @media (min-width: 1024px) {
-    .entry-content p {
+    .entry-content p,
+    .entry-content li {
       font-size: var(--text-md);
     }
   }
@@ -1671,16 +1673,19 @@ Text Domain: laqonto
    * Content block
    */
   .content-block p,
+  .entry-content ul,
   .content-block ul,
   .content-block ol {
     margin-block-end: var(--size-5);
   }
 
+  .entry-content ul li,
   .content-block ul li {
     position: relative;
     padding-inline-start: var(--size-5);
   }
 
+  .entry-content ul li::before,
   .content-block ul li::before {
     content: '';
     display: block;
@@ -1693,6 +1698,7 @@ Text Domain: laqonto
     left: 0;
   }
 
+  .entry-content ul li + li,
   .content-block ul li + li {
     margin-block-start: var(--size-1);
   }

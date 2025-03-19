@@ -47,7 +47,7 @@
           <nav>
             <ul>
               <li>
-                <a href="#" class="link-underlined">Politika privatnosti</a>
+                <a href="/politika-privatnosti" class="link-underlined">Politika privatnosti</a>
               </li>
             </ul>
           </nav>
