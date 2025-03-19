@@ -96,12 +96,18 @@ Text Domain: laqonto
   }
 }
 
+.page-template-form .gfield_label {
+  display: block !important;
+}
+
+.page-template-form .gfield_label > .gfield_required {
+  display: inline-block;
+  vertical-align: super;
+  margin-inline-start: var(--size-1);
+}
+
 @media (min-width: 1046px) {
   .page-template-form .gfield_label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0 !important;
     width: calc(
       (var(--grid-column-width) * 3) + (var(--grid-gap) * 2)
     ) !important;
@@ -116,7 +122,8 @@ Text Domain: laqonto
 }
 
 @media (min-width: 1314px) {
-  .page-template-form .ginput_container {
+  .page-template-form .ginput_container,
+  .page-template-form .gfield_description {
     width: calc(
       (var(--grid-column-width) * 7) + (var(--grid-gap) * 6)
     ) !important;
@@ -360,6 +367,11 @@ Text Domain: laqonto
   .gform-footer::after {
     right: calc(((100vw - var(--grid-width-no-gap)) / 2) * -1);
   }
+}
+
+.gform-theme--framework .gfield--type-radio,
+.gform-theme--framework .gfield--type-multi_choice {
+  flex-wrap: wrap;
 }
 
 .gform-theme--framework .gfield--type-multi_choice {
