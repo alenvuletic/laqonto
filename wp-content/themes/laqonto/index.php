@@ -161,28 +161,82 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider-box">
-            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/tihomir-vuletic.webp' ); ?>" class="slider-box__image" alt="Tihomir Vuletić">
             <div class="slider-box__content text-white">
-              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
-              <p>Knjigovodstveni stručnjak</p>
+              <p class="text-5xl font-display leading-none mb-2">Tihomir Vuletić</p>
+              <p>Direktor</p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
-            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/jasna-vuletic.webp' ); ?>" class="slider-box__image" alt="Jasna Vuletić">
             <div class="slider-box__content text-white">
-              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
-              <p>Knjigovodstveni stručnjak</p>
+              <p class="text-5xl font-display leading-none mb-2">Jasna Vuletić</p>
+              <p>Direktor</p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
-            <img src="https://placehold.co/1248" class="slider-box__image" alt="Mario Antunović">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/doris-turic.webp' ); ?>" class="slider-box__image" alt="Doris Turić">
             <div class="slider-box__content text-white">
-              <p class="text-5xl font-display leading-none mb-2">Mario Antunović</p>
-              <p>Knjigovodstveni stručnjak</p>
+              <p class="text-5xl font-display leading-none mb-2">Doris Turić</p>
+              <p>Viši knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/antonia-alac.webp' ); ?>" class="slider-box__image" alt="Antonia Alač">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Antonia Alač</p>
+              <p>Viši knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/filip-vuletic.webp' ); ?>" class="slider-box__image" alt="Filip Vuletić">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Filip Vuletić</p>
+              <p>Viši knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/stela-duvancic.webp' ); ?>" class="slider-box__image" alt="Stela Duvančić">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Stela Duvančić</p>
+              <p>Knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/barbara-cvitanovic.webp' ); ?>" class="slider-box__image" alt="Barbara Cvitanović">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Barbara Cvitanović</p>
+              <p>Knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/martina-roso.webp' ); ?>" class="slider-box__image" alt="Martina Roso">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Martina Roso</p>
+              <p>Knjigovođa</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/content/vera-suturovic.webp' ); ?>" class="slider-box__image" alt="Vera Suturović">
+            <div class="slider-box__content text-white">
+              <p class="text-5xl font-display leading-none mb-2">Vera Suturović</p>
+              <p>Viši knjigovođa</p>
             </div>
           </div>
         </div>
