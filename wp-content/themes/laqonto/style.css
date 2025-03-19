@@ -1051,6 +1051,11 @@ Text Domain: laqonto
     }
   }
 
+  .hero__content--bottom-right {
+    top: auto;
+    bottom: 0;
+  }
+
   .hero__content p {
     line-height: 1.25;
     letter-spacing: var(--tracking-tight);
@@ -1659,7 +1664,7 @@ Text Domain: laqonto
    */
   .anchor-offset {
     position: relative;
-    top: calc(var(--size-18) * -1);
+    top: -4.375rem;
   }
 
   /**

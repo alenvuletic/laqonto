@@ -25,7 +25,7 @@
 <div class="container">
   <div class="hero">
     <img class="hero__background" src="<?php echo esc_url( get_template_directory_uri() . '/images/content/homepage-2.webp' ); ?>" alt="" >
-    <div class="hero__content text-white">
+    <div class="hero__content hero__content--bottom-right text-white">
       <p>Moderno knjigovodstvo, prilagođeno tvom poslovanju.</p>
     </div>
   </div>
