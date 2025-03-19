@@ -735,7 +735,7 @@ Text Domain: laqonto
   .site-header {
     position: relative;
     width: 100%;
-    z-index: 1000;
+    z-index: 1200;
   }
 
   .site-header--sticky.is-visible {
@@ -1184,10 +1184,10 @@ Text Domain: laqonto
    */
   /* TODO: Handle height when admin bar is visible */
   .offcanvas {
-    height: calc(100dvh - var(--size-27));
+    height: 100dvh;
     width: 100%;
     position: fixed;
-    top: var(--size-27);
+    top: 0;
     left: 0;
     background-color: var(--color-grayscale-white);
     z-index: 1100;
@@ -1196,11 +1196,11 @@ Text Domain: laqonto
     visibility: hidden;
     transform: translateY(-16px);
     transition: opacity 0.2s, visibility 0.2s, transform 0.3s;
+    padding-block-start: var(--size-27);
   }
 
   .has-sticky-header .offcanvas {
-    height: calc(100dvh - var(--size-18));
-    top: var(--size-18);
+    padding-block-start: var(--size-18);
   }
 
   .offcanvas.is-active {

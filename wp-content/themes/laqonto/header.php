@@ -87,7 +87,7 @@
         <p class="offcanvas__title">Izbornik</p>
           <nav>
             <ul class="offcanvas-nav">
-              <li class="offcanvas-nav__item is-current">
+              <li class="offcanvas-nav__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link">Naslovnica</a>
               </li>
               <li class="offcanvas-nav__item">
