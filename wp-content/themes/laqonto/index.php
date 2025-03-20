@@ -13,7 +13,13 @@
 </div>
 
 <div class="grid mt-30 mb-45 lg:mb-55">
-  <div class="col-span-12 lg:col-span-7 lg:col-start-5 ms-auto">
+  <div class="col-span-12 lg:col-span-4 hidden lg:block">
+    <div class="mb-1 mt-3">
+      <?php do_action('wpml_add_language_selector'); ?>
+    </div>
+    <p class="text-xs">Jezik / Language</p>
+  </div>
+  <div class="col-span-12 lg:col-span-7 lg:col-start-5">
     <h2 class="mb-10 lg:mb-12"><?php _e("Vođenje usluga financijskog knjigovodstva, prilagođene potrebama vašeg poslovanja.", "laqonto"); ?></h2>
     <div class="content-block">
       <p><?php _e("Brinemo o vašim financijama – vođenje knjigovodstva, obračun plaća, poslovno savjetovanje i financijsko izvještavanje. Usklađujemo vaše poslovanje sa zakonom i pojednostavljujemo administraciju.", "laqonto"); ?></p>

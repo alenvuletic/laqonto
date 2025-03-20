@@ -99,10 +99,7 @@
         <div>
           <hr class="divider mb-2" />
           <p class="offcanvas__title">Jezik</p>
-          <div class="toggle">
-            <a href="#" class="toggle__button is-active">HRV</a>
-            <a href="#" class="toggle__button">ENG</a>
-          </div>
+          <?php do_action('wpml_add_language_selector'); ?>
           <hr class="divider mt-9 mb-2" />
           <p class="offcanvas__title"><?php _e("Povežimo se", "laqonto"); ?></p>
           <ul class="list-arrow">

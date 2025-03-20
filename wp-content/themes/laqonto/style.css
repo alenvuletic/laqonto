@@ -1257,13 +1257,21 @@ Text Domain: laqonto
     background-color: var(--color-grayscale-300);
     border-radius: 9999px;
     padding-block: var(--size-1);
-    padding-inline-start: var(--size-1);
+    padding-inline: var(--size-1);
   }
 
   .toggle__button {
     text-align: center;
     line-height: var(--size-11);
     border-radius: 9999px;
+  }
+
+  .toggle__button:not(.is-active):first-child {
+    padding-inline-start: var(--size-4);
+    padding-inline-end: var(--size-2);
+  }
+
+  .toggle__button:not(.is-active):last-child {
     padding-inline-start: var(--size-2);
     padding-inline-end: var(--size-4);
   }
@@ -1756,6 +1764,10 @@ Text Domain: laqonto
   /**
    * Font Size
    */
+  .text-xs {
+    font-size: var(--text-xs);
+  }
+
   .text-xl {
     font-size: var(--text-xl);
   }
@@ -1781,6 +1793,10 @@ Text Domain: laqonto
   }
 
   @media (min-width: 1024px) {
+    .lg\:text-xs {
+      font-size: var(--text-xs);
+    }
+
     .lg\:text-xl {
       font-size: var(--text-xl);
     }

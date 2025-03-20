@@ -35,3 +35,37 @@ function laqonto_load_textdomain() {
   load_theme_textdomain('laqonto', get_template_directory() . '/languages');
 }
 add_action('after_setup_theme', 'laqonto_load_textdomain');
+
+/**
+ * Custom WPML language switcher output.
+ */
+function custom_language_switcher() {
+  if (function_exists('icl_get_languages')) {
+      $languages = icl_get_languages('skip_missing=0');
+
+      if (!empty($languages)) {
+          echo '<div class="toggle">';
+          foreach ($languages as $lang) {
+              $active_class = $lang['active'] ? 'toggle__button is-active' : 'toggle__button';
+              echo '<a href="' . $lang['url'] . '" class="' . $active_class . '">';
+
+              // Use your custom language labels
+              $code = $lang['language_code'];
+              $custom_labels = array(
+                  'hr' => 'HRV',
+                  'en' => 'ENG'
+              );
+
+              echo isset($custom_labels[$code]) ? $custom_labels[$code] : strtoupper($code);
+              echo '</a>';
+          }
+          echo '</div>';
+      }
+  }
+}
+
+// Remove default actions first
+remove_all_actions('wpml_add_language_selector');
+
+// Add your custom action
+add_action('wpml_add_language_selector', 'custom_language_switcher');
