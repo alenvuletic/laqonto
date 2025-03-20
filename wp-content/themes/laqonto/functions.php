@@ -27,3 +27,11 @@ function has_hero_cta() {
       get_page_template_slug() !== 'page-templates/form.php'
     );
 }
+
+/**
+ * Loading laqonto text domain.
+ */
+function laqonto_load_textdomain() {
+  load_theme_textdomain('laqonto', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'laqonto_load_textdomain');
