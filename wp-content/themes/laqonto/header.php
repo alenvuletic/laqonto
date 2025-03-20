@@ -35,13 +35,13 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link">Usluge</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link"><?php _e("Usluge", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link">O nama</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
+              <a href="/ponuda" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
         </nav>
@@ -63,13 +63,13 @@
         <nav class="hidden lg:block">
           <ul class="site-header-nav">
             <li class="site-header-nav__item">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link">Usluge</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#services" class="site-header-nav__link"><?php _e("Usluge", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link">O nama</a>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="/ponuda" class="button button--primary button--small button--rounded">Zatraži ponudu</a>
+              <a href="/ponuda" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
         </nav>
@@ -88,10 +88,10 @@
           <nav>
             <ul class="offcanvas-nav">
               <li class="offcanvas-nav__item">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link">Naslovnica</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link"><?php _e("Naslovnica", "laqonto"); ?></a>
               </li>
               <li class="offcanvas-nav__item">
-                <a href="/ponuda" class="offcanvas-nav__link">Zatraži ponudu</a>
+                <a href="/ponuda" class="offcanvas-nav__link"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
               </li>
             </ul>
           </nav>
@@ -104,7 +104,7 @@
             <a href="#" class="toggle__button">ENG</a>
           </div>
           <hr class="divider mt-9 mb-2" />
-          <p class="offcanvas__title">Povežimo se</p>
+          <p class="offcanvas__title"><?php _e("Povežimo se", "laqonto"); ?></p>
           <ul class="list-arrow">
             <li class="list-arrow__item">
               <a href="https://linkedin.com/company/laqonto" target="_blank" class="list-arrow__link">

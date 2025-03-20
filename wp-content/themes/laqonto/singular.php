@@ -8,7 +8,7 @@
           <span class="button__icon">
             <?php include get_theme_file_path( '/icons/arrow-left.svg' ); ?>
           </span>
-          <span>Naslovnica</span>
+          <span><?php _e("Naslovnica", "laqonto"); ?></span>
         </a>
       </div>
       <div class="col-span-12 lg:col-span-6">
