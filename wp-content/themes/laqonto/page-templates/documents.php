@@ -50,7 +50,7 @@
                 <span class="documents-block-item__icon">
                   <?php include get_theme_file_path( '/icons/file-text.svg' ); ?>
                 </span>
-                <p><?php _e("Uputa dodjele punomoći e-RGFI (putem e-Građana)", "laqonto"); ?></p>
+                <p><?php _e("Uputa dodjele punomoći e-RGFI (putem e-Građani)", "laqonto"); ?></p>
               </div>
               <a href="https://laqonto.com/wp-content/uploads/2025/03/punomoc-e-rgfi-egradani.pdf" target="_blank" class="button button--secondary button--medium button--has-icon gap-3">
                 <span class="button__icon">
