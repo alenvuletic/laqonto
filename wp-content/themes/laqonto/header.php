@@ -41,6 +41,9 @@
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
+              <a href="/obrasci" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
+            </li>
+            <li class="site-header-nav__item">
               <a href="/ponuda" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
@@ -69,6 +72,9 @@
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
+              <a href="/obrasci" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
+            </li>
+            <li class="site-header-nav__item">
               <a href="/ponuda" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
@@ -89,6 +95,9 @@
             <ul class="offcanvas-nav">
               <li class="offcanvas-nav__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link"><?php _e("Naslovnica", "laqonto"); ?></a>
+              </li>
+              <li class="offcanvas-nav__item">
+                <a href="/obrasci" class="offcanvas-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
               </li>
               <li class="offcanvas-nav__item">
                 <a href="/ponuda" class="offcanvas-nav__link"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
