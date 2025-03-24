@@ -139,7 +139,7 @@
         <p class="stats-grid__label"><?php _e("Godina iskustva", "laqonto"); ?></p>
       </div>
       <div class="stats-grid__item">
-        <p class="stats-grid__number">90+</p>
+        <p class="stats-grid__number">200+</p>
         <p class="stats-grid__label"><?php _e("Zadovoljnih partnera", "laqonto"); ?></p>
       </div>
       <div class="stats-grid__item">
