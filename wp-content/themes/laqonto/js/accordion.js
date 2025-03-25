@@ -16,14 +16,19 @@
   });
 
   function toggleAccordion(e) {
+    const clickedToggle = e.target;
+    const targetPanel = clickedToggle.nextElementSibling;
+    const isCurrentlyExpanded =
+      targetPanel.parentElement.dataset.expanded === 'true';
+
     panels.forEach(function (panel) {
-      if (panel.previousElementSibling === e.target) {
-        panel.parentElement.dataset.expanded = 'true';
-        panel.dataset.ariaHidden = 'false';
-      } else {
-        panel.parentElement.dataset.expanded = 'false';
-        panel.dataset.ariaHidden = 'true';
-      }
+      panel.parentElement.dataset.expanded = 'false';
+      panel.dataset.ariaHidden = 'true';
     });
+
+    if (!isCurrentlyExpanded) {
+      targetPanel.parentElement.dataset.expanded = 'true';
+      targetPanel.dataset.ariaHidden = 'false';
+    }
   }
 })();
