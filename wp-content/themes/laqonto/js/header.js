@@ -21,6 +21,7 @@
   hamburgerIconElements.forEach(function (element) {
     element.addEventListener('click', function () {
       this.classList.toggle('is-active');
+      document.querySelector('html').classList.toggle('hamburger-active');
     });
   });
 

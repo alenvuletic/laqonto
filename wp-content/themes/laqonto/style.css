@@ -781,6 +781,13 @@ Text Domain: laqonto
     }
   }
 
+  html:not(.hamburger-active)
+    .site-header--inverted-colors
+    .site-header-logo__svg
+    path {
+    fill: var(--color-grayscale-white);
+  }
+
   .site-header--sticky .site-header-logo__svg {
     width: auto;
     height: var(--size-6);
@@ -795,6 +802,10 @@ Text Domain: laqonto
   .site-header-nav__link {
     color: var(--color-primary);
     font-weight: 700;
+  }
+
+  .site-header--inverted-colors .site-header-nav__link {
+    color: var(--color-grayscale-white);
   }
 
   /**
@@ -1144,6 +1155,18 @@ Text Domain: laqonto
     transition-property: transform, opacity;
     transition-timing-function: ease;
     transition-duration: 0.2s;
+  }
+
+  html:not(.hamburger-active)
+    .site-header--inverted-colors
+    .hamburger-icon__inner,
+  html:not(.hamburger-active)
+    .site-header--inverted-colors
+    .hamburger-icon__inner::before,
+  html:not(.hamburger-active)
+    .site-header--inverted-colors
+    .hamburger-icon__inner::after {
+    background-color: var(--color-grayscale-white);
   }
 
   .hamburger-icon__inner::before,

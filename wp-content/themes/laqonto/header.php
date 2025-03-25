@@ -25,7 +25,11 @@
   <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <div class="site-header">
+    <?php if (is_front_page()) : ?>
+      <div class="site-header site-header--inverted-colors">
+    <?php else : ?>
+      <div class="site-header">
+    <?php endif; ?>
       <div class="site-header__inner container">
         <p class="site-header-logo">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-header-logo__link">
