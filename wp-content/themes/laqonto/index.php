@@ -143,7 +143,7 @@
         <p class="stats-grid__label"><?php _e("Zadovoljnih partnera", "laqonto"); ?></p>
       </div>
       <div class="stats-grid__item">
-        <a href="/ponuda" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
+        <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/offer' : '/ponuda'; ?>" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
         <p class="stats-grid__label"><?php _e("Personalizirana ponuda", "laqonto"); ?></p>
       </div>
     </div>

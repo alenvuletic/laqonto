@@ -47,7 +47,7 @@
           <nav>
             <ul>
               <li>
-                <a href="/politika-privatnosti" class="link-underlined"><?php _e("Politika privatnosti", "laqonto"); ?></a>
+                <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/privacy-policy' : '/politika-privatnosti'; ?>" class="link-underlined"><?php _e("Politika privatnosti", "laqonto"); ?></a>
               </li>
             </ul>
           </nav>
