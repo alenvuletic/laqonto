@@ -69,3 +69,17 @@ remove_all_actions('wpml_add_language_selector');
 
 // Add your custom action
 add_action('wpml_add_language_selector', 'custom_language_switcher');
+
+/**
+ * Add Gravity Forms capabilities to the Editor role.
+ */
+function add_gravity_forms_capabilities() {
+  // Get the editor role
+  $role = get_role('editor');
+
+  if ($role) {
+      // Simply add the main capability needed to access Gravity Forms
+      $role->add_cap('gform_full_access');
+  }
+}
+add_action('admin_init', 'add_gravity_forms_capabilities');
