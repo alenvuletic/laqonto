@@ -125,7 +125,7 @@
   </div>
   <div class="col-span-12 lg:col-span-6">
     <div class="text-xl lg:text-2xl mt-22 lg:mt-4">
-      <p><?php _e("LAQONTO, osnovan 1997. godine, pruža precizne i pouzdane knjigovodstvene usluge poduzetnicima i obrtnicima. Kroz digitalizaciju, stručnost i individualni pristup, pojednostavljujemo poslovanje i osiguravamo financijsku sigurnost. Dostupni smo lokalno, širom Hrvatske i online.", "laqonto"); ?></p>
+      <p><?php _e("LAQONTO, osnovan 1995. godine, pruža precizne i pouzdane knjigovodstvene usluge poduzetnicima i obrtnicima. Kroz digitalizaciju, stručnost i individualni pristup, pojednostavljujemo poslovanje i osiguravamo financijsku sigurnost. Dostupni smo lokalno, širom Hrvatske i online.", "laqonto"); ?></p>
     </div>
   </div>
   <div class="col-span-12 mt-12 lg:mt-28">
@@ -272,30 +272,73 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p class="mb-2">Izuzetno smo zadovoljni sa knjigovodstvenim servisom R.S. Bonum d.o.o., te ako ste u potrazi za knjigovodstvenim uslugama na najvišoj mogućoj razini onda je naša preporuka svakako R.S. Bonum.</p>
-              <p>Svaki posao odrađen je profesionalno i brzo, komunikacija je jednostavna i ugodna, te dostupna u svakom trenutku. Surađujemo od samih početaka našeg poslovanja, te su nam uvelike pomogli u pokretanju našeg poslovanja na čemu smo neizmjerno zahvalni!</p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Mario Antunović</p>
-              <p>Knjigovodstveni stručnjak</p>
+              <p><?php _e("Izuzetno sam zadovoljan suradnjom s LAQONTO. Profesionalni su, precizni, uvijek dostupni te daju korisne savjete koji olakšavaju poslovanje. Toplo preporučujem!"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Aratrum d.o.o."); ?></p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p class="mb-2">Osoba je to kojoj je knjigovodstvo više od posla, a s klijentima ima puno više od poslovnog odnosa. Za svakog klijenta/tvrtku skrbi kao da je njena te se pobrine da dobije sve što mu pripada.</p>
-              <p>Redovito obavještava svoje klijente o svim novinama i promjenama zakona te predlaže nova rješenja.</p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Konoba More</p>
-              <p>Miljenko Šuperak</p>
+              <p><?php _e("Brzi, precizni i uvijek spremni pomoći. Preporuka svima koji žele pouzdanog knjigovodstvenog partnera!"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Brnić d.o.o."); ?></p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p class="mb-2">Izuzetno smo zadovoljni sa knjigovodstvenim servisom R.S. Bonum d.o.o., te ako ste u potrazi za knjigovodstvenim uslugama na najvišoj mogućoj razini onda je naša preporuka svakako R.S. Bonum.</p>
-              <p>Svaki posao odrađen je profesionalno i brzo, komunikacija je jednostavna i ugodna, te dostupna u svakom trenutku. Surađujemo od samih početaka našeg poslovanja, te su nam uvelike pomogli u pokretanju našeg poslovanja na čemu smo neizmjerno zahvalni!</p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7">Mario Antunović</p>
-              <p>Knjigovodstveni stručnjak</p>
+              <p><?php _e("Izuzetno ljubazni, susretljivi i odgovorni - jednostavno rečeno, pravi profesionalci. Sva pitanja objašnjavaju jasno i jednostavnim rječnikom. Već 20 godina surađujemo i definitivno ih preporučujemo svima."); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Restoran Vicenco"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("Suradnja s njima je pravo zadovoljstvo! Ljubazni su, uvijek dostupni i spremni objasniti sve što mi nije jasno. Pomažu mi da se bez brige fokusiram na posao, znajući da je moje knjigovodstvo u sigurnim rukama."); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Neno Mikulić"); ?></p>
+              <p><?php _e("Akademski slikar, kipar i karikaturist"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("Otkad surađujem s njima nemam više brige oko papirologije i rokova. Sve odrade na vrijeme i uvijek su tu ako nešto trebam. Osim što su stručni, stvarno su i ljubazni, tako da ih preporučujem svima koji žele bezbrižno poslovati."); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Cvjećarna Vanda"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("S LAQONTO surađujemo dugi niz godina jer su, osim stručnosti, pokazali da svoje usluge izvršavaju profesionalno i brzo, te su u koraku s potrebama klijenata i tržišta. Uvijek dostupni za savjete i pomoć te ih definitivno preporučujemo."); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Siniša immobilien d.o.o."); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("Njihov klijent sam već 15 godina i mogu napisati samo riječi hvale. Nikada nisam imao problema, sve obavljaju brzo i bez greške. Moja topla preporuka!"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Konoba Veza"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("Usluge LAQONTO koristim već trinaest godina. Iznimno sam zadovoljan njihovom profesionalnošću i kvalitetom usluge. Sve preporuke!"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Budanko travel"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("S LAQONTO surađujemo već duže vrijeme i iznimno cijenimo njihovu pouzdanu i profesionalnu podršku u svim računovodstvenim poslovima. Tim radi izuzetno precizno, točno na vrijeme i uvijek je dostupan za pitanja. Zahvaljujući njihovom stručnom savjetovanju, možemo se u potpunosti posvetiti svom glavnom poslu."); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("MaDuHoliday"); ?></p>
             </div>
           </div>
         </div>
