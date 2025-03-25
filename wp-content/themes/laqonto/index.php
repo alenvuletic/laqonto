@@ -296,7 +296,7 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("Suradnja s njima je pravo zadovoljstvo! Ljubazni su, uvijek dostupni i spremni objasniti sve što mi nije jasno. Pomažu mi da se bez brige fokusiram na posao, znajući da je moje knjigovodstvo u sigurnim rukama."); ?></p>
+              <p><?php _e("LAQONTO je izvrstan izbor za vođenje mojih knjiga. Pouzdani su, vrlo temeljiti i uvijek odrade sve na vrijeme. Zahvaljujući njihovoj podršci, mogu mirno raditi svoj posao znajući da se o svim administrativnim obvezama netko kvalitetno brine. Svakako preporučujem suradnju!"); ?></p>
               <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Neno Mikulić"); ?></p>
               <p><?php _e("Akademski slikar, kipar i karikaturist"); ?></p>
             </div>
@@ -306,7 +306,7 @@
           <div class="slider-box">
             <div class="slider-box__content">
               <p><?php _e("Otkad surađujem s njima nemam više brige oko papirologije i rokova. Sve odrade na vrijeme i uvijek su tu ako nešto trebam. Osim što su stručni, stvarno su i ljubazni, tako da ih preporučujem svima koji žele bezbrižno poslovati."); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Cvjećarna Vanda"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Cvjetni studio Vanda"); ?></p>
             </div>
           </div>
         </div>
