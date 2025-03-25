@@ -41,10 +41,10 @@
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/forms' : '/obrasci'; ?>" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
+              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/forms' : '/obrasci'; ?>" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/offer' : '/ponuda'; ?>" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
+              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/offer' : '/ponuda'; ?>" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
         </nav>
@@ -72,10 +72,10 @@
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>#about-us" class="site-header-nav__link"><?php _e("O nama", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/forms' : '/obrasci'; ?>" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
+              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/forms' : '/obrasci'; ?>" class="site-header-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
             </li>
             <li class="site-header-nav__item">
-              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/offer' : '/ponuda'; ?>" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
+              <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/offer' : '/ponuda'; ?>" class="button button--primary button--small button--rounded"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
             </li>
           </ul>
         </nav>
@@ -97,10 +97,10 @@
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="offcanvas-nav__link"><?php _e("Naslovnica", "laqonto"); ?></a>
               </li>
               <li class="offcanvas-nav__item">
-                <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/forms' : '/obrasci'; ?>" class="offcanvas-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
+                <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/forms' : '/obrasci'; ?>" class="offcanvas-nav__link"><?php _e("Obrasci", "laqonto"); ?></a>
               </li>
               <li class="offcanvas-nav__item">
-                <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/offer' : '/ponuda'; ?>" class="offcanvas-nav__link"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
+                <a href="<?php echo ICL_LANGUAGE_CODE === 'en' ? '/en/offer' : '/ponuda'; ?>" class="offcanvas-nav__link"><?php _e("Zatraži ponudu", "laqonto"); ?></a>
               </li>
             </ul>
           </nav>
