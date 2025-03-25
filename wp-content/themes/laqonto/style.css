@@ -1558,9 +1558,15 @@ Text Domain: laqonto
   }
 
   .stats-grid__item {
-    flex-basis: 50%;
+    flex-basis: 100%;
     flex-shrink: 0;
     flex-grow: 0;
+  }
+
+  @media (min-width: 480px) {
+    .stats-grid__item {
+      flex-basis: 50%;
+    }
   }
 
   @media (min-width: 1024px) {
