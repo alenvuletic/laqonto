@@ -272,24 +272,32 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("Izuzetno sam zadovoljan suradnjom s LAQONTO. Profesionalni su, precizni, uvijek dostupni te daju korisne savjete koji olakšavaju poslovanje. Toplo preporučujem!", "laqonto"); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Aratrum d.o.o.", "laqonto"); ?></p>
+              <p><?php _e("Preporučujemo LAQONTO jer svoj posao rade bez greške i uvijek na vrijeme. Jednostavni su, pouzdani i vrlo susretljivi prema nama kao klijentima. Nikada nismo imali problema, a papirologija nam više nije nikakvo opterećenje.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Spiral Pipes Technics d.o.o.", "laqonto"); ?></p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("Brzi, precizni i uvijek spremni pomoći. Preporuka svima koji žele pouzdanog knjigovodstvenog partnera!", "laqonto"); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Brnić d.o.o.", "laqonto"); ?></p>
+              <p><?php _e("Mišljenje i stav o LAQONTO je da su jako brzi i stručni u svom poslu. Uvijek susretljivi na bilo koji način. Sve preporuke.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Sušac gradnja", "laqonto"); ?></p>
             </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("Izuzetno ljubazni, susretljivi i odgovorni - jednostavno rečeno, pravi profesionalci. Sva pitanja objašnjavaju jasno i jednostavnim rječnikom. Već 20 godina surađujemo i definitivno ih preporučujemo svima.", "laqonto"); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Restoran Vicenco", "laqonto"); ?></p>
+              <p><?php _e("S LAQONTO surađujemo dugi niz godina jer su, osim stručnosti, pokazali da svoje usluge izvršavaju profesionalno i brzo, te su u koraku s potrebama klijenata i tržišta. Uvijek dostupni za savjete i pomoć te ih definitivno preporučujemo.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Siniša immobilien d.o.o.", "laqonto"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("S LAQONTO surađujemo već duže vrijeme i iznimno cijenimo njihovu pouzdanu i profesionalnu podršku u svim računovodstvenim poslovima. Tim radi izuzetno precizno, točno na vrijeme i uvijek je dostupan za pitanja. Zahvaljujući njihovom stručnom savjetovanju, možemo se u potpunosti posvetiti svom glavnom poslu.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("MaDuHoliday", "laqonto"); ?></p>
             </div>
           </div>
         </div>
@@ -305,6 +313,14 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
+              <p><?php _e("Izuzetno ljubazni, susretljivi i odgovorni - jednostavno rečeno, pravi profesionalci. Sva pitanja objašnjavaju jasno i jednostavnim rječnikom. Već 20 godina surađujemo i definitivno ih preporučujemo svima.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Restoran Vicenco", "laqonto"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
               <p><?php _e("Otkad surađujem s njima nemam više brige oko papirologije i rokova. Sve odrade na vrijeme i uvijek su tu ako nešto trebam. Osim što su stručni, stvarno su i ljubazni, tako da ih preporučujem svima koji žele bezbrižno poslovati.", "laqonto"); ?></p>
               <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Cvjetni studio Vanda", "laqonto"); ?></p>
             </div>
@@ -313,8 +329,8 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("S LAQONTO surađujemo dugi niz godina jer su, osim stručnosti, pokazali da svoje usluge izvršavaju profesionalno i brzo, te su u koraku s potrebama klijenata i tržišta. Uvijek dostupni za savjete i pomoć te ih definitivno preporučujemo.", "laqonto"); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Siniša immobilien d.o.o.", "laqonto"); ?></p>
+              <p><?php _e("Izuzetno sam zadovoljan suradnjom s LAQONTO. Profesionalni su, precizni, uvijek dostupni te daju korisne savjete koji olakšavaju poslovanje. Toplo preporučujem!", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Aratrum d.o.o.", "laqonto"); ?></p>
             </div>
           </div>
         </div>
@@ -329,6 +345,30 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
+              <p><?php _e("Profesionalni, ažurni, uvijek dostupni za dodatni savjet. Sve preporuke. Vođenje knjiga na najvišoj razini!", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Workout Athletic Republic", "laqonto"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("LAQONTO ima veliko iskustvo i pruža izvrsne usluge. Pouzdani su, uvijek dostupni za pomoć i savjete, te vrlo ugodni u suradnji. Ako želite uštedjeti vrijeme, novac i izbjeći brige, toplo preporučujem suradnju s njima!", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Škorpion", "laqonto"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
+              <p><?php _e("Brzi, precizni i uvijek spremni pomoći. Preporuka svima koji žele pouzdanog knjigovodstvenog partnera!", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Brnić d.o.o.", "laqonto"); ?></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider-box">
+            <div class="slider-box__content">
               <p><?php _e("Usluge LAQONTO koristim već trinaest godina. Iznimno sam zadovoljan njihovom profesionalnošću i kvalitetom usluge. Sve preporuke!", "laqonto"); ?></p>
               <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Budanko travel", "laqonto"); ?></p>
             </div>
@@ -337,8 +377,8 @@
         <div class="swiper-slide">
           <div class="slider-box">
             <div class="slider-box__content">
-              <p><?php _e("S LAQONTO surađujemo već duže vrijeme i iznimno cijenimo njihovu pouzdanu i profesionalnu podršku u svim računovodstvenim poslovima. Tim radi izuzetno precizno, točno na vrijeme i uvijek je dostupan za pitanja. Zahvaljujući njihovom stručnom savjetovanju, možemo se u potpunosti posvetiti svom glavnom poslu.", "laqonto"); ?></p>
-              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("MaDuHoliday", "laqonto"); ?></p>
+              <p><?php _e("Potpuno profesionalni i posvećeni poslu. Otvoreni za savjet i svaku vrstu pomoći. Prezadovoljan.", "laqonto"); ?></p>
+              <p class="text-3xl text-primary font-display leading-none mb-2 mt-7"><?php _e("Blue Sky", "laqonto"); ?></p>
             </div>
           </div>
         </div>
